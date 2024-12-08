@@ -81,4 +81,3 @@ If you have suggestions or feedback about the website, please feel free to open 
 ---
 
 Thank you for visiting my portfolio website!
-```
