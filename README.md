@@ -82,12 +82,3 @@ If you have suggestions or feedback about the website, please feel free to open 
 
 Thank you for visiting my portfolio website!
 ```
-
-### **Next Steps**
-1. Save the completed content as `README.md` in your repository's root folder.
-2. Push it to GitHub:
-   ```bash
-   git add README.md
-   git commit -m "Add complete README for portfolio website"
-   git push origin main
-   ``` 
