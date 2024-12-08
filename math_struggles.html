@@ -9,13 +9,6 @@
 <body>
   <header>
     <h1>Mathematic Struggles Among STEM Students</h1>
-    <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-    <nav id="mobile-nav" class="hidden">
-      <span><a href="about.html">About Me</a></span>
-      <span><a href="research.html">Research</a></span>
-      <span><a href="images/Joshua George.pdf" download>Resume</a></span>
-      <span><a href="connect.html">Connect</a></span>
-    </nav>
   </header>
 
   <main>
@@ -28,7 +21,7 @@
         <iframe src="images/JG_WVASposter.pdf" frameborder="0"></iframe>
       </div>
       <p>
-        <a href="images/JG_WVASposter.pdf" download>Download Poster (PDF)</a>
+        <a href="images/JG_WVASposter.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Download Poster (PDF)</a>
       </p>
     </section>
     
@@ -45,11 +38,29 @@
         <li>K–12 spending rates (Figure 5) indicate that regional differences in educational investment impact students’ foundational preparedness for college-level math and science.</li>
       </ul>      
     </section>
+
+    <section id="menu">
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+      </div>
+  
+      <nav id="mobile-nav" class="hidden">
+        <span><a href="about.html">About Me</a></span>
+        <span><a href="research.html">Research</a></span>
+        <span>
+          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
+        </span>      
+        <span><a href="connect.html">Connect</a></span>
+      </nav>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Josh George. All Rights Reserved.</p>
     <p><a href="research.html" target="_self">Back to Research</a></p>
   </footer>
+  
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/download-manager.js"></script> 
 </body>
 </html>

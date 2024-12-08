@@ -9,27 +9,41 @@
 <body>
   <header>
     <h1>About Me</h1>
-    <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-    <nav id="mobile-nav" class="hidden">
-      <span><a href="about.html">About Me</a></span>
-      <span><a href="research.html">Research</a></span>
-      <span><a href="images/Joshua George.pdf" download>Resume</a></span>
-      <span><a href="connect.html">Connect</a></span>
-    </nav>
   </header>
 
   <main>
-    <img src="images/html-head.jpg" alt="Josh George" class="profile-img">
-    <p>
-      Hello! I'm Josh George, a passionate developer and computer science enthusiast currently pursuing my degree at Fairmont State University, with an expected graduation in May 2025. I love solving problems, building software, and continuously learning new technologies. My goal is to create efficient, user-friendly applications and contribute to meaningful projects.
-    </p>
-    <p>
-      Beyond my professional pursuits, I'm a devoted family man. Caring for my children and spending time with my family is at the heart of everything I do. Balancing my love for development and my role as a parent motivates me to work harder and aim higher in every aspect of my life.
-    </p>
-    <p>
-      Check out my <a href="index.html">portfolio</a> for more details!
-    </p>
+    <section id="profile">  
+      <img src="images/html-head.jpg" alt="Josh George" class="profile-img">
+      
+      <p>
+        Hello! I'm Joshua George, an aspiring software engineer currently completing my Bachelor's degree in Computer Science at Fairmont State University, with an expected graduation in May 2025. I thrive on solving complex problems, developing efficient code, and quickly mastering new technologies to deliver user-focused solutions.
+      </p>
+      
+      <p>
+        I'm eager to bring my strong technical foundations, adaptability, and collaborative mindset to a professional environment. My academic projects and personal initiatives have equipped me with experience in Java, C++, and Python, as well as front-end technologies like HTML, CSS, and JavaScript. I'm committed to creating impactful software that enhances user experiences and meets organizational goals.
+      </p>
+      
+      <p>
+        Feel free to explore my <a href="index.html">portfolio</a> to see my work and learn more about how I can contribute to your team.
+      </p>
+    </section>
+
+    <section id="menu">
+    <div style="text-align: center; margin-top: 1.5rem;">
+      <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+    </div>
+
+    <nav id="mobile-nav" class="hidden">
+      <span><a href="about.html">About Me</a></span>
+      <span><a href="research.html">Research</a></span>
+      <span>
+        <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
+      </span>      
+      <span><a href="connect.html">Connect</a></span>
+    </nav>
+    </section>
   </main>
+  
 
   <footer>
     <p>&copy; 2024 Josh George. All Rights Reserved.</p>
@@ -38,5 +52,6 @@
 
   <!-- JavaScript for Dropdown Menu -->
   <script src="js/menu-toggle.js"></script>
+  <script src="js/resume-manager.js"></script> 
 </body>
 </html>

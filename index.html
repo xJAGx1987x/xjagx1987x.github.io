@@ -8,31 +8,35 @@
 </head>
 <body>
   <header>
-    <h1>Josh George</h1>
-    <p>Research | Computer Science | Developer</p>
-    <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-    <nav id="mobile-nav" class="hidden">
-      <span><a href="about.html">About Me</a></span>
-      <span><a href="research.html">Research</a></span>
-      <span><a href="images/Joshua George.pdf" download>Resume</a></span>
-      <span><a href="connect.html">Connect</a></span>
-    </nav>
+    <h1>Joshua George</h1>
   </header>
 
   <main>
-    <section id="resume">
-      <h2>Resume</h2>
-      <a href="images/Joshua George.pdf" download>Download My Resume</a>
+    <section id="About Me">
+      <h2>About Me</h2>
+      <a href="about.html">Learn More</a>
     </section>
 
-    <section id="links">
-      <h2>Connect With Me</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/joshua-george-76493a2b7/" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/xJAGx1987x" target="_blank">GitHub</a> |
-        <a href="mailto:xJAGx1987x@gmail.com">Email</a>
-      </p>
+    <section id="research">
+      <h2>Research</h2>
+      <a href="research.html">View My Projects</a>
     </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Download My Resume</a>
+    </section>
+    
+    <section id="links">
+      <a href="connect.html">
+          <h2>Connect With Me</h2>
+      </a>
+      <p>
+          <a href="https://www.linkedin.com/in/joshua-george-76493a2b7/" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/xJAGx1987x" target="_blank">GitHub</a> |
+          <a href="mailto:xJAGx1987x@gmail.com">Email</a>
+      </p>
+  </section>  
   </main>
 
   <footer>
@@ -42,6 +46,7 @@
 
   <!-- JavaScript for Dropdown Menu -->
   <script src="js/menu-toggle.js"></script>
+  <script src="js/download-manager.js"></script> 
 </body>
 </html>
 </html>

@@ -9,14 +9,6 @@
 <body>
   <header>
     <h1>My Research Projects</h1>
-    <p>Exploring innovative solutions in STEM education, forensic science, and computational tools.</p>
-    <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-    <nav id="mobile-nav" class="hidden">
-      <span><a href="about.html">About Me</a></span>
-      <span><a href="research.html">Research</a></span>
-      <span><a href="images/Joshua George.pdf" download>Resume</a></span>
-      <span><a href="connect.html">Connect</a></span>
-    </nav>
   </header>
 
   <main>
@@ -33,6 +25,21 @@
         </li>
       </ul>
     </section>
+
+    <section id="menu">
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+      </div>
+  
+      <nav id="mobile-nav" class="hidden">
+        <span><a href="about.html">About Me</a></span>
+        <span><a href="research.html">Research</a></span>
+        <span>
+          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
+        </span>      
+        <span><a href="connect.html">Connect</a></span>
+      </nav>
+    </section>
   </main>
 
   <footer>
@@ -42,5 +49,6 @@
 
   <!-- JavaScript for Dropdown Menu -->
   <script src="js/menu-toggle.js"></script>
+  <script src="js/download-manager.js"></script> 
 </body>
 </html>
