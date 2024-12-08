@@ -158,35 +158,47 @@ footer {
   text-decoration: underline;
 }
 
-/* Embedded PDF styling */
-embed {
-  border: 1px solid #64ffda;
-  border-radius: 8px;
-  margin-top: 1rem;
-  width: 100%;
-  height: auto;
+/* General Embed Styling */
+embed, iframe {
+  border: none; /* Remove borders from embedded content */
+  width: 100%; /* Ensure it fills the container */
+  height: 100%; /* Ensure it fills the container */
 }
 
-#poster embed {
-  width: 80%; /* Adjust as needed */
-  height: 80%; /* Maintain aspect ratio */
-  max-width: 100%; /* Prevent overflow */
-}
-
-/* Embed Container */
-.embed-container {
+/* Specific Styling for the Poster */
+#poster .embed-container {
   display: block;
-  max-width: 80%;
-  margin: 20px auto;
-  border: 4px solid #64ffda;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+  max-width: 80%; /* Adjust to control container width */
+  margin: 20px auto; /* Center-align and add spacing */
+  border: 4px solid #64ffda; /* Accent border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+  overflow: hidden; /* Ensure content respects rounded corners */
   height: 500px; /* Fixed height */
 }
 
-.embed-container iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+#poster .embed-container embed {
+  width: 100%; /* Fill the container */
+  height: 100%; /* Fill the container */
+  object-fit: cover; /* Ensure the content scales correctly */
+}
+
+/* General link styling */
+a {
+  text-decoration: none; /* Remove underline */
+  color: #64ffda; /* Accent color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Link hover state */
+a:hover {
+  color: #00c4b4; /* Slightly brighter accent for hover */
+}
+
+/* Remove visited, focus, and active styles */
+a:visited,
+a:focus,
+a:active {
+  color: #64ffda; /* Keep accent color for all states */
+  text-decoration: none; /* No underline for visited or active links */
 }
