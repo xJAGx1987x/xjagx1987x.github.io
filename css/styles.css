@@ -147,3 +147,56 @@ embed {
   border-radius: 8px;
   margin-top: 1rem;
 }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-img {
+    max-width: 100px;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    margin-bottom: 1rem;
+  }
+
+  .project-list li {
+    padding: 10px;
+  }
+
+  embed {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
