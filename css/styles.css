@@ -168,8 +168,8 @@ embed {
 }
 
 #poster embed {
-  width: auto; /* Adjust as needed */
-  height: auto; /* Maintain aspect ratio */
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Maintain aspect ratio */
   max-width: 100%; /* Prevent overflow */
 }
 
