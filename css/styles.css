@@ -312,3 +312,60 @@ embed, iframe {
   width: 100%; /* Ensure it fills the container */
   height: 100%; /* Ensure it fills the container */
 }
+
+/* Credits Section */
+#credits {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#credits ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+#credits ul li {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.sponsor-logos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sponsor-logos img {
+  max-width: 150px; /* Limit logo size */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease;
+}
+
+.sponsor-logos img:hover {
+  transform: scale(1.1); /* Subtle zoom on hover */
+}
+
+#nasa-sponsorship {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  border: 1px solid #64ffda;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+  text-align: center;
+}
+
+#nasa-sponsorship h2 {
+  color: #64ffda;
+  margin-bottom: 1rem;
+}
+
+#nasa-sponsorship p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
