@@ -12,27 +12,40 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
-h2 .icon {
-  font-size: inherit; /* Inherits size from `.material-icons` */
-  vertical-align: inherit; /* Inherits alignment from `.material-icons` */
-  margin-right: inherit; /* Ensures consistency */
-  position: relative; /* Adjust position slightly */
+#about-me .icon {
+  width: 48px; /* Larger size for this specific icon */
+  height: 48px;
+  text-align: center; /* Center icon */
 }
 
-.material-icons hover {
+#about-me .icon:hover {
   color: #555; /* Hover color */
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-size: 24px; /* Adjust to match surrounding text size */
-  vertical-align: middle; /* Align with the middle of the text */
-  margin-right: 8px; /* Spacing between icon and text */
-  display: inline-block; /* Treat the icon like an inline element */
-  line-height: 1; /* Prevent extra spacing */
-  color: #64ffda; /* Icon color */
-  background-color: transparent; /* Remove conflicting background color */
-  position: relative; /* Adjust position slightly */
+#research .icon {
+  width: 48px; /* Larger size for this specific icon */
+  height: 48px;
+  text-align: center; /* Center icon */
+}
+
+#research .icon:hover {
+  color: #555; /* Hover color */
+}
+
+#resume .icon{
+  width: 48px; /* Larger size for this specific icon */
+  height: 48px;
+  text-align: center; /* Center icon */
+}
+
+#resume .icon:hover {
+  color: #555; /* Hover color */
+}
+
+#contact .icon {
+  width: 48px; /* Larger size for this specific icon */
+  height: 48px;
+  text-align: center; /* Center icon */
 }
 
 /* Center the section content */
@@ -151,7 +164,7 @@ header {
 }
 
 header h1 {
-  font-size: 3.5rem; /* Enhanced font size for emphasis */
+  font-size: 3.0rem; /* Enhanced font size for emphasis */
   font-family: 'Jetbrains Mono', monospace; /* Corrected font name */
   margin: 0;
   position: relative;
@@ -231,8 +244,8 @@ nav a:hover {
 
 #menu-toggle:focus {
   outline: 2px solid #64ffda; /* Accessibility focus outline */
+  outline-offset: 4px; /* Increased outline offset */
 }
-
 
 
 #mobile-nav.hidden {
@@ -490,22 +503,6 @@ a:active {
   line-height: 1.6;
 }
 
-.icon svg, .github-icon {
-  width: 24px; /* Set desired width */
-  height: 24px; /* Set desired height */
-  fill: currentColor; /* Inherit color from the parent */
-  display: inline-block; /* Ensure it behaves like an inline element */
-  vertical-align: middle; /* Align with text */
-}
-
-.icon, .github-icon {
-  margin-right: 5px; /* Add spacing between the icon and the text */
-  color: #64ffda; /* Default color for the icons */
-}
-
-.icon:hover, .github-icon:hover {
-  color: #555; /* Hover color for the icons */
-}
 
 /* Section link styling */
 .section-link {
@@ -516,6 +513,7 @@ a:active {
   background: transparent;
   transition: background-color 0.3s ease, color 0.3s ease;
   border-radius: 8px; /* Optional: rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); 
 }
 
 /* Hover effect for the link */
@@ -534,28 +532,10 @@ a:active {
   justify-content: center;
 }
 
-/* Learn More styling */
-.learn-more {
-  display: flex;
-  align-items: center; /* Align icon and text */
-  gap: 8px; /* Space between icon and text */
-  margin-top: 8px; /* Add spacing below the heading */
-  font-size: 1.3rem; /* Adjust text size */
-  color: #FFFFFF; /* Accent color */
-}
-
-/* Icon styling */
-.learn-more .icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  color: #64ffda ;
-  background-color: transparent;
-}
-
 /* Hover effect for icons */
 .section-link:hover .icon {
   filter: brightness(0.8); /* Slightly dim icon on hover */
+  width: 48;
 }
 
 
@@ -613,43 +593,58 @@ a:active {
   transform: translateY(-2px); /* Subtle lift effect */
 }
 
-/* Style for the section container */
+/* Style for the #links container */
 #links {
-  display: flex; /* Set the container as a flexbox */
-  flex-direction: column; /* Ensure items are stacked vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center; /* Ensures text is centered */
-  gap: 16px; /* Adds space between the heading and icons */
+  display: block; /* Ensure the container behaves like a block-level element */
+  padding: 15px; /* Match padding for consistency */
+  text-decoration: none; /* Remove underline (for links inside) */
+  color: #FFFFFF; /* Default text and icon color */
+  background: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 8px; /* Rounded corners for card-like design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
+  max-width: auto; /* Optional: Limit width */
+  margin: 20px auto; /* Center the section horizontally */
 }
 
-/* Style for the heading */
+/* Hover effect for the #links container */
+#links:hover {
+  background-color: #1f1f1f; /* Match hover background color */
+  color: #52e0c8; /* Change text and icon color on hover */
+}
+
+/* Heading styling (Connect) */
 #links h2 {
-  display: flex; /* Flexbox for heading to align icon and text */
+  display: flex; /* Flex layout for icon and text */
   align-items: center; /* Align icon and text vertically */
-  justify-content: center; /* Center the heading content */
-  gap: 8px; /* Space between icon and "Connect With Me" text */
-  font-size: 2rem; /* Adjust font size */
-  color: #64ffda; /* Your desired color */
+  gap: 16px; /* Space between icon and text */
+  font-size: 2.5rem; /* Match heading size */
+  margin: 0; /* Remove default margin */
+  justify-content: center; /* Center the content */
 }
 
-/* Style for the icons container */
+/* Icon container inside the #links */
 #links p {
-  display: flex; /* Set the icons as flex children */
+  display: flex; /* Arrange icons in a row */
   justify-content: center; /* Center icons horizontally */
   align-items: center; /* Align icons vertically */
-  gap: 50px; /* Space between individual icons */
+  gap: 40px; /* Space between individual icons */
   margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 /* Style for individual icons */
 #links .icon svg {
-  width: 40px; /* Adjust icon size */
-  height: 40px;
-  fill: #64ffda; /* Icon color */
-  transition: transform 0.3s, fill 0.3s; /* Add smooth hover effect */
+  width: 36px; /* Icon size */
+  height: 36px;
+  fill: #64ffda; /* Default icon color */
+  
+  transition: transform 0.3s, fill 0.3s; /* Smooth hover effects */
 }
 
+/* Hover effect for icons */
 #links .icon svg:hover {
-  transform: scale(1.1); /* Slightly enlarge on hover */
-  fill: #52e0c8; /* Change color on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  fill: #555; /* Change color on hover */
 }
+
