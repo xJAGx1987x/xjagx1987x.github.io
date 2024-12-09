@@ -213,18 +213,20 @@ nav a:hover::after {
   width: 100%; /* Underline spans full width on hover */
 }
 
-
 #menu {
-  display: block; /* Ensure the container behaves like a block-level element */
-  padding: 15px; /* Match padding for consistency */
-  text-decoration: none; /* Remove underline (for links inside) */
-  color: #FFFFFF; /* Default text and icon color */
-  background: transparent; /* Transparent background */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  border-radius: 8px; /* Rounded corners for card-like design */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
-  max-width: auto; /* Optional: Limit width */
-  margin: 20px auto; /* Center the section horizontally */
+  margin: 1rem auto;
+  padding: 1rem;
+  background: transparent; /* Remove the box background */
+  border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
+  border-right: 3px solid #64ffda ; 
+  border-top: 3px solid #64ffda ;
+  border-bottom: 3px solid #64ffda ;
+  border-radius: 0; /* Remove border-radius for a cleaner, inline look */
+  color: #b0b0b0; /* Muted color for a footnote effect */
+  text-align: left; /* Align the text with the main content */
+  font-size: 0.9rem; /* Reduce font size to make it less prominent */
+  line-height: 1.5; /* Adjust line-height for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
 /* Dropdown Menu Styling */
@@ -355,7 +357,6 @@ a:active {
   outline-offset: 2px; /* Creates space between the link and outline */
 }
 
-
 /* Button-like links */
 .button-link {
   display: inline-block;
@@ -434,58 +435,212 @@ ul li a:hover {
 
 /* Poster Section Styling */
 #poster {
-  text-align: center;
-  margin: 2rem auto; /* Centers the section */
+  text-align: center; /* Center the image and button */
+  margin: 2rem auto; /* Center the section */
+  padding: 1rem; /* Add padding around the section */
 }
 
+/* Heading Styling */
+#poster h2 {
+  color: #64ffda; /* Match the theme */
+  font-size: 2rem; /* Adjust heading size */
+  margin-bottom: 1rem;
+}
+
+/* Left-Aligned Paragraph */
+#poster p.left-align {
+  text-align: left; /* Align text to the left */
+  margin: 0 1rem 1.5rem 1rem; /* Add margin for spacing */
+  font-size: 1rem; /* Adjust text size */
+  line-height: 1.6; /* Improve readability */
+  color: #e0e0e0; /* Softer text color */
+}
+
+/* Center-Aligned Download Link */
+#poster p.center-align {
+  text-align: center; /* Center-align the paragraph */
+  margin-top: 1rem; /* Add space above the download button */
+}
+
+/* Download Button Styling */
+#poster a.download-link {
+  display: inline-block; /* Center the link */
+  padding: 0.5rem 1rem; /* Adjust button padding */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #64ffda; /* Match the border color */
+  border-radius: 4px; /* Round the corners */
+  color: #64ffda; /* Match the theme */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  font-weight: bold; /* Make the text stand out */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Download Button Hover Effects */
+#poster a.download-link:hover {
+  background-color: #64ffda; /* Highlight the background on hover */
+  color: #121212; /* Change text color on hover */
+}
+
+/* Embed Container Styling */
 #poster .embed-container {
-  display: block;
-  max-width: 80%; /* Adjust the maximum width */
-  margin: 20px auto; /* Center-align and add spacing */
-  border: 4px solid #64ffda; /* Accent border */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow */
-  overflow: hidden; /* Ensure content respects rounded corners */
-  height: 500px; /* Fixed height */
+  max-width: 100%; /* Ensure iframe scales responsively */
+  margin: 1rem auto; /* Center the iframe */
+  border: 2px solid #64ffda; /* Add border to the container */
+  border-radius: 8px; /* Round the edges */
+  overflow: hidden; /* Prevent overflow issues */
+  height: 500px; /* Set a fixed height for iframe */
 }
 
-#poster .embed-container embed {
-  width: 100%; /* Fill the container */
-  height: 100%; /* Fill the container */
-  object-fit: cover; /* Ensure the content scales correctly */
+/* Iframe Styling */
+#poster .embed-container iframe {
+  width: 100%; /* Responsive width */
+  height: 100%; /* Match container height */
+  border: none; /* Remove default iframe border */
 }
 
-.embed-container {
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  height: 500px;
+/* Research List Section Styling */
+#research-list {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  border: 1px solid #64ffda;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  color: #e0e0e0;
+  max-width: 800px;
 }
 
-.embed-container iframe {
-  position: relative;
-  animation: glideIn 1.5s ease-out;
-  -webkit-animation: glideIn 1.5s ease-out;
-  opacity: 0;
+/* Description Text */
+#research-list .description {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+  text-align: left;
+}
+
+/* Key Findings Text */
+#research-list .key-findings {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #64ffda;
+  text-align: left;
+}
+
+/* Findings List */
+#research-list .findings-list {
+  list-style-type: disc;
+  margin: 0 1.5rem; /* Add some spacing on the left */
+  padding: 0;
+  color: #e0e0e0;
+}
+
+/* Findings List Items */
+#research-list .findings-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Highlight specific figure text */
+#research-list .findings-list li strong {
+  color: #64ffda; /* Highlight important figure names or keywords */
+}
+
+/* Hover effect for the section */
+#research-list:hover {
+  background-color: #1c1c1c;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
 }
 
 
 /* Credits Section */
 #credits {
-  text-align: center;
-  margin: 2rem auto;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: transparent; /* Match NASA section background */
+  border-left: 3px solid #64ffda; /* Add a left border for emphasis */
+  border-radius: 0; /* Keep a clean, inline look */
+  color: #b0b0b0; /* Muted color for a footnote effect */
+  text-align: left; /* Align text with the main content */
+  font-size: 0.9rem; /* Match NASA's reduced font size */
+  line-height: 1.5; /* Ensure good readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow effect */
+}
+
+#credits h2 {
+  color: #52e0c8; /* Match NASA's heading color */
+  font-size: 1.1rem; /* Same font size as NASA heading */
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Bold for emphasis */
+}
+
+#credits p {
+  margin: 0.2rem 0; /* Reduce margin between paragraphs */
+  font-size: 0.9rem; /* Smaller font size for a footnote effect */
+  color: #a0a0a0; /* Muted gray for text */
 }
 
 #credits ul {
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
+  margin: 0.5rem 0 0.5rem 1.5rem; /* Add spacing to separate from header */
+  padding: 0; /* Remove extra padding */
+  list-style-type: disc; /* Use a disc-style bullet list */
 }
 
 #credits ul li {
-  margin: 0.5rem 0;
-  font-size: 1rem;
+  margin: 0.3rem 0; /* Reduce margin between list items */
+  font-size: 0.85rem; /* Smaller font size for a footnote effect */
+  color: #a0a0a0; /* Muted gray for text */
 }
+
+#credits ul li strong {
+  color: #64ffda; /* Highlight important words in the list */
+}
+
+#credits .material-icons{
+  vertical-align: middle; /* Align icon with text */
+  margin-right: 5px; /* Add space between icon and text */
+}
+
+/* Style for Key Findings heading */
+.key-findings {
+  font-size: 1.2rem; /* Slightly larger than body text */
+  font-weight: bold; /* Make it stand out */
+  color: #64ffda; /* Match your teal color scheme */
+  margin-bottom: 0.5rem; /* Add space below heading */
+  text-align: left; /* Align with the list */
+}
+
+/* Style for the findings list */
+.findings-list {
+  margin: 1rem 0; /* Space above and below the list */
+  padding-left: 1.5rem; /* Indent the list for readability */
+  list-style-type: disc; /* Use standard bullet points */
+  list-style-position: outside; /* Ensure bullets are outside the text */
+  color: #e0e0e0; /* Light gray text color for readability */
+  font-size: 1rem; /* Maintain standard text size */
+  line-height: 1.6; /* Improve readability with proper line spacing */
+}
+
+/* Style for individual list items */
+.findings-list li {
+  margin: 0.5rem 0; /* Space between each list item */
+  color: #e0e0e0; /* Light gray text color */
+}
+
+/* Highlight key figures (e.g., Figure 1, Figure 2) */
+.findings-list li strong {
+  color: #64ffda; /* Teal color to highlight important text */
+  font-weight: bold; /* Emphasize the key figures */
+}
+
+/* Hover effect for list items */
+.findings-list li:hover {
+  color: #52e0c8; /* Change color slightly on hover */
+}
+
 
 .sponsor-logos {
   display: flex;
@@ -635,7 +790,6 @@ ul li a:hover {
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
-
 /* Hover effect for the #links container */
 #links:hover {
   background-color: #1f1f1f; /* Match hover background color */
@@ -741,15 +895,27 @@ ul li a:hover {
 
 
 #quotes {
-  display: block; /* Ensure the container behaves like a block-level element */
-  padding: 15px; /* Match padding for consistency */
-  text-decoration: none; /* Remove underline (for links inside) */
-  color: #FFFFFF; /* Default text and icon color */
-  background: transparent; /* Transparent background */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
-  border-radius: 8px; /* Rounded corners for card-like design */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
-  max-width: auto; /* Optional: Limit width */
-  margin: 20px auto; /* Center the section horizontally */
-  font-size: 1.0rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: transparent; /* Remove the box background */
+  border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
+  border-radius: 0; /* Remove border-radius for a cleaner, inline look */
+  color: #b0b0b0; /* Muted color for a footnote effect */
+  text-align: left; /* Align the text with the main content */
+  font-size: 0.9rem; /* Reduce font size to make it less prominent */
+  line-height: 1.5; /* Adjust line-height for readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+#quotes h2 {
+  color: #52e0c8; /* Slightly subdued color for the heading */
+  font-size: 1.1rem; /* Smaller size to match footnote style */
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Ensure it stands out slightly as the section header */
+}
+
+#quotes p {
+  margin: 0.2rem 0; /* Reduce margin between paragraphs */
+  font-size: 0.85rem; /* Further reduce font size for a footnote feel */
+  color: #a0a0a0; /* Muted gray to separate it from the main content */
 }
