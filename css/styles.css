@@ -1,12 +1,56 @@
-/* Import JetBrains Mono and Atkinson Hyperlegible from Google Fonts */
+/* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import "https://www.nerdfonts.com/assets/css/webfont.css"
 
+/* Font Styles */
 .atkinson {
   font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 .jetbrains {
   font-family: 'JetBrains Mono', monospace;
+}
+
+h2 .icon {
+  font-size: inherit; /* Inherits size from `.material-icons` */
+  vertical-align: inherit; /* Inherits alignment from `.material-icons` */
+  margin-right: inherit; /* Ensures consistency */
+}
+
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-size: 24px; /* Adjust to match surrounding text size */
+  vertical-align: middle; /* Align with the middle of the text */
+  margin-right: 8px; /* Spacing between icon and text */
+  display: inline-block; /* Treat the icon like an inline element */
+  line-height: 1; /* Prevent extra spacing */
+  color: #64ffda; /* Icon color */
+  background-color: transparent; /* Remove conflicting background color */
+}
+
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  background-color: #64ffda; /* Button color */
+  color: #121212;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.share-btn:hover {
+  background-color: #64ffda; /* Darker blue on hover */
+}
+
+.share-btn .material-icons {
+  font-size: 20px; /* Icon size */
+  margin-right: 8px; /* Spacing between icon and text */
 }
 
 /* General body styling */
@@ -31,17 +75,32 @@ body {
 }
 
 @keyframes glowPulse {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1) rotateX(0deg);
-    opacity: 0.4;
-    background-color: #3498db;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.2) rotateX(15deg);
+  0% {
+    transform: translate(-50%, -50%) scale(1);
     opacity: 0.7;
-    background-color: #000000;
+    background-color: #52e0c8; /* Full "breathe in" */
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+    background-color: #000000; /* Start transitioning to "breathe out" */
+  }
+  60% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.4;
+    background-color: #000000; /* Hold dark color briefly at the peak of "breathe out" */
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.7;
+    background-color: #52e0c8; /* Back to full "breathe in" */
   }
 }
+
+.element {
+  animation: glowPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
 
 /* Header Styling */
 header {

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joshua George - Developer Portfolio</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nerd-fonts-webfont/css/nerd-fonts.css">
+
 </head>
 <body>
   <header>
@@ -12,31 +14,40 @@
   </header>
 
   <main>
-    <section id="About Me">
-      <h2>About Me</h2>
+    <section id="about-me">
+      <h2><span class="material-icons">account_circle</span>About Me</h2>
       <a href="about.html">Learn More</a>
     </section>
 
     <section id="research">
-      <h2>Research</h2>
+      <h2><span class="material-icons">terminal</span>Research</h2>
       <a href="research.html">View My Projects</a>
     </section>
 
     <section id="resume">
-      <h2>Resume</h2>
-      <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Download My Resume</a>
+      <h2><span class="material-icons">download</span>Resume</h2>
+      <a href="images/Joshua George.pdf" download>Download My Resume</a>
+    </section>
+
+    <section id="links">
+      <h2><span class="material-icons">sync_alt</span>Connect With Me</h2>
+      <p>
+        <span class="material-icons">link</span>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+        <span class="material-icons">link</span>
+        <a href="https://github.com/" target="_blank">GitHub</a> |
+        <span class="material-icons">email</span>
+        <a href="mailto:example@example.com">Email</a>
+      </p> 
+    </section>
+
+    <section id="share">
+      <h2>Share This Page</h2>
+      <button id="share-button" class="share-btn">
+        <span class="material-icons">share</span> Share
+      </button>
     </section>
     
-    <section id="links">
-      <a href="connect.html">
-          <h2>Connect With Me</h2>
-      </a>
-      <p>
-          <a href="https://www.linkedin.com/in/joshua-george-76493a2b7/" target="_blank">LinkedIn</a> |
-          <a href="https://github.com/xJAGx1987x" target="_blank">GitHub</a> |
-          <a href="mailto:xJAGx1987x@gmail.com">Email</a>
-      </p>
-  </section>  
   </main>
 
   <footer>
@@ -46,7 +57,7 @@
 
   <!-- JavaScript for Dropdown Menu -->
   <script src="js/menu-toggle.js"></script>
-  <script src="js/download-manager.js"></script> 
+  <script src="js/download-manager.js"></script>
+  <script src="js/share-manager.js"></script>
 </body>
-</html>
 </html>
