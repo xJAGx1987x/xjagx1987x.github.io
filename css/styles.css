@@ -924,7 +924,7 @@ ul li a:hover {
 #research-container {
   margin: 2rem auto;
   padding: 2rem;
-  background: transparent;
+  background: linear-gradient(135deg, #1f1f1f, #121212); /* Add gradient background */
   border: 2px solid #64ffda; /* Outer accent border */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Shadow for depth */
