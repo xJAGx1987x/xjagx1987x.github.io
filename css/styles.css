@@ -967,3 +967,47 @@ ul li a:hover {
   line-height: 1.6;
   margin-bottom: 1rem; /* Space after paragraphs */
 }
+
+/* Mentor link section styling */
+#mentor-link {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212); /* Match the gradient theme */
+  border: 1px solid #64ffda; /* Teal border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  text-align: center; /* Center align the content */
+  color: #e0e0e0; /* Light text color */
+  font-size: 0.9rem; /* Smaller font size for footnote-like text */
+}
+
+/* Styling for the paragraph */
+#mentor-link p {
+  margin-bottom: 0.5rem; /* Space between text and the link */
+  font-size: 1rem;
+  line-height: 1.5; /* Ensure readability */
+  color: #e0e0e0;
+}
+
+/* Styling for the LinkedIn link */
+#mentor-link a.linkedin-link {
+  display: inline-flex; /* Align icon and text horizontally */
+  align-items: center;
+  gap: 8px; /* Space between the icon and the text */
+  text-decoration: none;
+  font-weight: bold; /* Make the link text stand out */
+  color: #64ffda; /* Teal color for the link */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+}
+
+/* Hover effect for the LinkedIn link */
+#mentor-link a.linkedin-link:hover {
+  color: #52e0c8; /* Slightly darker teal on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Material icons styling */
+#mentor-link a.linkedin-link .material-icons {
+  font-size: 1.2rem; /* Adjust icon size */
+  vertical-align: middle; /* Align icon with text */
+}
