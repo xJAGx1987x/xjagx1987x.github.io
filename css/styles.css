@@ -18,7 +18,32 @@ body {
   color: #e0e0e0;      /* Light text */
 }
 
-/* Header styling */
+/* Animations for Header */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0deg);
+    opacity: 0.4;
+    background-color: #3498db;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2) rotateX(15deg);
+    opacity: 0.7;
+    background-color: #000000;
+  }
+}
+
+/* Header Styling */
 header {
   text-align: center; /* Aligns all content in the header */
   padding: 3rem 1rem; /* Updated padding for better spacing */
@@ -38,6 +63,7 @@ header h1 {
   margin: 0;
   position: relative;
   z-index: 1; /* Ensure text is above decorative elements */
+  animation: fadeIn 1.2s ease-out; /* Subtle fade-in animation */
 }
 
 header h1::after {
@@ -55,11 +81,7 @@ header p {
   font-size: 1.5rem; /* Updated font size for better proportions */
   margin: 1rem 0 0;
   z-index: 1;
-}
-
-/* Subtle Animation for Header Text */
-header h1, header p {
-  animation: fadeIn 1.2s ease-out;
+  animation: fadeIn 1.2s ease-out; /* Subtle fade-in animation */
 }
 
 /* Decorative Background Glow */
@@ -73,8 +95,9 @@ header::before {
   height: 500px;
   background: radial-gradient(circle, rgba(100, 255, 218, 0.2), rgba(0, 0, 0, 0));
   z-index: 0; /* Behind the text */
-  animation: glowPulse 5s infinite;
+  animation: glowPulse 5s infinite ease-in-out; /* Updated to include 3D effect */
 }
+
 
 /* Navigation menu */
 nav {
@@ -184,30 +207,6 @@ footer {
 .profile-img:hover {
   transform: scale(1.05);
 }
-
-/* Animations for Header */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes glowPulse {
-  0%, 100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.4;
-  }
-  50% {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0.7;
-  }
-}
-
 
 /* General link styling */
 a {
