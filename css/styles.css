@@ -661,7 +661,7 @@ ul li a:hover {
 }
 
 #nasa-space-grant {
-  margin: 1rem auto;
+  margin: 2rem auto;
   padding: 1rem;
   background: transparent; /* Remove the box background */
   border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
@@ -918,4 +918,52 @@ ul li a:hover {
   margin: 0.2rem 0; /* Reduce margin between paragraphs */
   font-size: 0.85rem; /* Further reduce font size for a footnote feel */
   color: #a0a0a0; /* Muted gray to separate it from the main content */
+}
+
+/* Style for the wrapping research container */
+#research-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: transparent;
+  border: 2px solid #64ffda; /* Outer accent border */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Shadow for depth */
+}
+
+/* Style for individual sections inside the container */
+#research-container section {
+  margin-bottom: 1.5rem; /* Space between sections */
+  padding: 0; /* Remove padding for internal sections */
+}
+
+/* Heading styling */
+#research-container h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #64ffda; /* Teal accent color */
+  margin-bottom: 1rem;
+}
+
+/* List styling */
+.findings-list {
+  margin: 1rem 0;
+  padding-left: 1.5rem; /* Indent list items */
+  list-style-type: disc; /* Standard bullets */
+  color: #e0e0e0; /* Light gray for list text */
+  line-height: 1.6; /* Better readability */
+}
+
+.findings-list li {
+  margin-bottom: 0.8rem; /* Space between list items */
+}
+
+.findings-list li strong {
+  color: #64ffda; /* Highlighted keywords */
+}
+
+/* Paragraph text styling */
+#research-container p {
+  color: #e0e0e0;
+  line-height: 1.6;
+  margin-bottom: 1rem; /* Space after paragraphs */
 }
