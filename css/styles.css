@@ -16,8 +16,12 @@ h2 .icon {
   font-size: inherit; /* Inherits size from `.material-icons` */
   vertical-align: inherit; /* Inherits alignment from `.material-icons` */
   margin-right: inherit; /* Ensures consistency */
+  position: relative; /* Adjust position slightly */
 }
 
+.material-icons::hover {
+  color: #555; /* Hover color */
+}
 
 .material-icons {
   font-family: 'Material Icons';
@@ -28,30 +32,48 @@ h2 .icon {
   line-height: 1; /* Prevent extra spacing */
   color: #64ffda; /* Icon color */
   background-color: transparent; /* Remove conflicting background color */
+  position: relative; /* Adjust position slightly */
 }
 
-
+/* Button Styling */
 .share-btn {
-  display: flex;
-  align-items: center;
-  background-color: #64ffda; /* Button color */
-  color: #121212;
-  border: none;
+  display: flex; /* Flex layout to align icon and text */
+  align-items: center; /* Vertically align icon and text */
+  gap: 8px; /* Space between icon and text */
+  background-color: #64ffda; /* Button background */
+  color: #121212; /* Text and icon color */
+  border: none; /* Remove border */
   padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  font-size: 16px; /* Text font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.share-btn:hover {
-  background-color: #64ffda; /* Darker blue on hover */
-}
-
+/* Material Icon Styling */
 .share-btn .material-icons {
   font-size: 20px; /* Icon size */
-  margin-right: 8px; /* Spacing between icon and text */
+  vertical-align: middle; /* Align icon with text */
+  color: inherit; /* Match button text color */
+  transition: color 0.3s ease;
 }
+
+/* Hover Effects */
+.share-btn:hover {
+  background-color: #52e0c8; /* Darker background on hover */
+  color: #ffffff; /* Change text and icon color */
+}
+
+.share-btn:hover .material-icons {
+  color: #ffffff; /* Match hover text color */
+}
+
+/* Ensure h2 matches theme */
+#share h2 {
+  color: #64ffda; /* Match theme color */
+  margin-bottom: 10px; /* Space below heading */
+}
+
 
 /* General body styling */
 body {
@@ -76,24 +98,24 @@ body {
 
 @keyframes glowPulse {
   0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.7;
-    background-color: #52e0c8; /* Full "breathe in" */
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0.8;
+    background-color: #000000; /* Full "breathe in" */
   }
   40% {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(3.3);
+    opacity: 0.5;
     background-color: #000000; /* Start transitioning to "breathe out" */
   }
   60% {
-    transform: translate(-50%, -50%) scale(1.2);
-    opacity: 0.4;
+    transform: translate(-50%, -50%) scale(3.3);
+    opacity: 0.5;
     background-color: #000000; /* Hold dark color briefly at the peak of "breathe out" */
   }
   100% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 0.7;
-    background-color: #52e0c8; /* Back to full "breathe in" */
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0.8;
+    background-color: #000000; /* Back to full "breathe in" */
   }
 }
 
@@ -118,7 +140,7 @@ header {
 
 header h1 {
   font-size: 3rem; /* Enhanced font size for emphasis */
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: 'Jetbrains Mono', monospace; /* Corrected font name */
   margin: 0;
   position: relative;
   z-index: 1; /* Ensure text is above decorative elements */
@@ -132,7 +154,7 @@ header h1::after {
   max-width: 400px; /* Limit the underline length */
   height: 4px; /* Slightly thicker line */
   background: #64ffda;
-  margin: 0.5rem auto;
+  margin: 0.5rem 0;
   border-radius: 4px; /* Rounded underline for a modern look */
 }
 
@@ -426,4 +448,80 @@ embed, iframe {
   margin: 0.5rem 0;
   font-size: 1rem;
   line-height: 1.6;
+}
+
+.icon svg, .github-icon {
+  width: 24px; /* Set desired width */
+  height: 24px; /* Set desired height */
+  fill: currentColor; /* Inherit color from the parent */
+  display: inline-block; /* Ensure it behaves like an inline element */
+  vertical-align: middle; /* Align with text */
+}
+
+.icon, .github-icon {
+  margin-right: 5px; /* Add spacing between the icon and the text */
+  color: #64ffda; /* Default color for the icons */
+}
+
+.icon:hover, .github-icon:hover {
+  color: #555; /* Hover color for the icons */
+}
+
+/* Section link styling */
+.section-link {
+  display: block; /* Make the entire section clickable */
+  padding: 15px; /* Add padding for better spacing */
+  text-decoration: none; /* Remove underline */
+  color: #FFFFFF; /* Inherit text color */
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+/* Hover effect for the link */
+.section-link:hover {
+  background-color: #1f1f1f; /* Light background on hover */
+  color: #52e0c8; /* Change text and icon color on hover */
+}
+
+/* Heading styling */
+.section-link h2
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 8px; /* Space between icon and text */
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+/* Learn More styling */
+.learn-more {
+  display: flex;
+  align-items: center; /* Align icon and text */
+  gap: 8px; /* Space between icon and text */
+  margin-top: 8px; /* Add spacing below the heading */
+  font-size: 1rem; /* Adjust text size */
+  color: #64ffda; /* Accent color */
+}
+
+/* Icon styling */
+.learn-more .icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  color: #64ffda ;
+  background-color: transparent;
+}
+
+/* Hover effect for icons */
+.section-link:hover .icon {
+  filter: brightness(0.8); /* Slightly dim icon on hover */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  stroke-width: 2; /* Maintain SVG stroke width */
+  transition: stroke 0.3s ease; /* Smooth transition for stroke color */
+  position: relative; /* Adjust position slightly */
 }
