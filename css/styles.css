@@ -98,29 +98,31 @@ body {
 
 @keyframes glowPulse {
   0% {
-    transform: translate(-50%, -50%) scale(3);
-    opacity: 0.8;
-    background-color: #000000; /* Full "breathe in" */
+    transform: translate(-50%, -50%) scale(2.75);
+    opacity: 0.3;
+    filter: blur(10px);
+    background-color: rgba(100, 255, 218, 0.2);
   }
-  40% {
-    transform: translate(-50%, -50%) scale(3.3);
-    opacity: 0.5;
-    background-color: #000000; /* Start transitioning to "breathe out" */
-  }
-  60% {
-    transform: translate(-50%, -50%) scale(3.3);
-    opacity: 0.5;
-    background-color: #000000; /* Hold dark color briefly at the peak of "breathe out" */
+  50% {
+    transform: translate(-50%, -50%) scale(3.25);
+    opacity: 0.75;
+    filter: blur(20px);
+    background-color: rgba(100, 255, 218, 0.1);
   }
   100% {
-    transform: translate(-50%, -50%) scale(3);
-    opacity: 0.8;
-    background-color: #000000; /* Back to full "breathe in" */
+    transform: translate(-50%, -50%) scale(2.75);
+    opacity: 0.3;
+    filter: blur(10px);
+    background-color: rgba(100, 255, 218, 0.2);
   }
 }
 
 .element {
   animation: glowPulse 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+header {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow */
 }
 
 
@@ -150,13 +152,15 @@ header h1 {
 header h1::after {
   content: "";
   display: block;
-  width: 100%; /* Full width under the text */
-  max-width: 400px; /* Limit the underline length */
-  height: 4px; /* Slightly thicker line */
-  background: #64ffda;
-  margin: 0.5rem 0;
-  border-radius: 4px; /* Rounded underline for a modern look */
+  width: 100%;
+  max-width: 400px;
+  height: 4px;
+  background: linear-gradient(to right, #64ffda, #52e0c8); /* Gradient underline */
+  margin: 0.5rem auto;
+  border-radius: 4px;
+  animation: fadeIn 1.2s ease-out; /* Animate underline appearance */
 }
+
 
 header p {
   font-size: 1.5rem; /* Updated font size for better proportions */
@@ -165,20 +169,18 @@ header p {
   animation: fadeIn 1.2s ease-out; /* Subtle fade-in animation */
 }
 
-/* Decorative Background Glow */
 header::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(100, 255, 218, 0.2), rgba(0, 0, 0, 0));
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(50, 150, 130, 0.3), rgba(0, 0, 0, 0.8)); /* Darker gradient */
   z-index: 0; /* Behind the text */
-  animation: glowPulse 5s infinite ease-in-out; /* Updated to include 3D effect */
+  animation: glowPulse 6s infinite cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* Navigation menu */
 nav {
