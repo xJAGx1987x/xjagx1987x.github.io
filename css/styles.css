@@ -1011,3 +1011,43 @@ ul li a:hover {
   font-size: 1.2rem; /* Adjust icon size */
   vertical-align: middle; /* Align icon with text */
 }
+
+
+header h1 {
+  color: #64ffda;
+  font-size: 2rem;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+}
+
+#research-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212);
+  border: 2px solid #64ffda;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  width: 90%;
+  max-width: 800px;
+}
+
+#research-container h2 {
+  font-size: 1.5rem;
+  color: #64ffda;
+  margin-bottom: 1rem;
+}
+
+#research-container p,
+#research-container ul {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+#research-container ul {
+  list-style-type: disc;
+  padding-left: 2rem;
+}
