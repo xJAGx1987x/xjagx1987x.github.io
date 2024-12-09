@@ -4,7 +4,8 @@
 
 Welcome to the **Developer Portfolio** of Josh George. This website showcases my journey as a developer and computer science enthusiast. It highlights my research, projects, and ways to connect with me professionally.
 
-![Website Preview](images/html-head.jpg)
+<img src="images/html-head.jpg" alt="Website Preview" width="400">
+
 
 ---
 
