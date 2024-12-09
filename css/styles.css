@@ -259,11 +259,29 @@ section {
   margin-bottom: 2rem;
 }
 
+/* Section Heading Styling */
 section h2 {
-  font-size: 1.5rem;
-  color: #64ffda;
+  font-size: 1.8rem; /* Increase heading size */
+  font-weight: bold; /* Ensure it stands out */
   margin-bottom: 0.5rem;
+  color: #64ffda;
 }
+
+/* Section Subtext Styling */
+section p {
+  font-size: 1.2rem; /* Increase subtext size */
+  margin: 0; /* Maintain clean spacing */
+  color: #e0e0e0; /* Softer text color */
+}
+
+/* Adjust Icon Alignment (Optional) */
+.icon {
+  width: 28px; /* Slightly larger icons */
+  height: 28px;
+  margin-right: 10px; /* Adjust spacing */
+  vertical-align: middle; /* Align with text */
+}
+
 
 /* Footer styling */
 footer {
@@ -389,11 +407,27 @@ a:active {
   object-fit: cover; /* Ensure the content scales correctly */
 }
 
-embed, iframe {
-  border: none; /* Remove borders from embedded content */
-  width: 100%; /* Ensure it fills the container */
-  height: 100%; /* Ensure it fills the container */
+/* Keyframes for Glide-In */
+@keyframes glideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0; /* Invisible */
+  }
+  100% {
+    transform: translateX(0); /* Slide into position */
+    opacity: 1; /* Fully visible */
+  }
 }
+
+/* Embed and Iframe Styling */
+embed, iframe {
+  border: none; /* Remove borders */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  animation: glideIn 1.5s ease-out; /* Apply the glide-in animation */
+  opacity: 0; /* Ensure it's invisible until animation starts */
+}
+
 
 /* Credits Section */
 #credits {
@@ -526,4 +560,58 @@ embed, iframe {
   stroke-width: 2; /* Maintain SVG stroke width */
   transition: stroke 0.3s ease; /* Smooth transition for stroke color */
   position: relative; /* Adjust position slightly */
+}
+
+/* Profile Section Styling */
+#profile {
+  text-align: center; /* Center-aligns all content */
+  max-width: 800px; /* Restricts width for better readability */
+  margin: 2rem auto; /* Centers the section with spacing */
+  padding: 2rem; /* Adds inner spacing */
+  background-color: #1f1f1f; /* Subtle card-like background */
+  border-radius: 8px; /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+  color: #e0e0e0; /* Light text for readability */
+  font-family: 'JetBrains Mono', monospace; /* Matches the site font */
+  line-height: 1.8; /* Improves text readability */
+}
+
+/* Profile Image Styling */
+.profile-img {
+  display: block;
+  max-width: 150px; /* Restricts image size */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 50%; /* Makes the image circular */
+  margin: 0 auto 1rem; /* Centers image and adds spacing */
+  border: 4px solid #64ffda; /* Adds accent border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Profile Image */
+.profile-img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Paragraph Styling */
+#profile p {
+  margin: 1rem 0; /* Adds spacing between paragraphs */
+  font-size: 1.1rem; /* Slightly larger font size */
+  text-align: justify; /* Improves readability */
+  line-height: 1.6; /* Space between lines */
+}
+
+/* Link Styling */
+#profile a {
+  color: #64ffda; /* Accent color for links */
+  text-decoration: none; /* Removes underline */
+  font-weight: 500; /* Slightly bolder for emphasis */
+  transition: color 0.3s ease, transform 0.2s ease; /* Adds hover effect */
+}
+
+/* Hover Effect for Links */
+#profile a:hover {
+  color: #52e0c8; /* Slightly brighter on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
 }
