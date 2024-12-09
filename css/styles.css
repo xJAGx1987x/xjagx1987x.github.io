@@ -12,41 +12,15 @@
   font-family: 'JetBrains Mono', monospace;
 }
 
-#about-me .icon {
-  width: 48px; /* Larger size for this specific icon */
-  height: 48px;
-  text-align: center; /* Center icon */
-}
-
-#about-me .icon:hover {
-  color: #555; /* Hover color */
-}
-
-#research .icon {
-  width: 48px; /* Larger size for this specific icon */
-  height: 48px;
-  text-align: center; /* Center icon */
-}
-
-#research .icon:hover {
-  color: #555; /* Hover color */
-}
-
-#resume .icon{
-  width: 48px; /* Larger size for this specific icon */
-  height: 48px;
-  text-align: center; /* Center icon */
-}
-
-#resume .icon:hover {
-  color: #555; /* Hover color */
-}
-
+#about-me .icon,
+#research .icon,
+#resume .icon,
 #contact .icon {
-  width: 48px; /* Larger size for this specific icon */
+  width: 48px;
   height: 48px;
-  text-align: center; /* Center icon */
+  text-align: center;
 }
+
 
 /* Center the section content */
 #share {
@@ -215,14 +189,42 @@ nav a {
   color: #64ffda;
   font-weight: 500;
   padding: 5px 10px;
-  border: 1px solid #64ffda;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
+  border: 1px solid transparent; /* Remove border unless hovered */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #64ffda;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #64ffda;
-  color: #121212;
+  color: #52e0c8; /* Subtle color change */
+}
+
+nav a:hover::after {
+  width: 100%; /* Underline spans full width on hover */
+}
+
+
+#menu {
+  display: block; /* Ensure the container behaves like a block-level element */
+  padding: 15px; /* Match padding for consistency */
+  text-decoration: none; /* Remove underline (for links inside) */
+  color: #FFFFFF; /* Default text and icon color */
+  background: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 8px; /* Rounded corners for card-like design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
+  max-width: auto; /* Optional: Limit width */
+  margin: 20px auto; /* Center the section horizontally */
 }
 
 /* Dropdown Menu Styling */
@@ -234,12 +236,12 @@ nav a:hover {
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
-  transition: background-color 0.3s, transform 0.2s; /* Added smooth effects */
+  transition: transform 0.2s, border-color 0.3s; /* Smooth hover effects */
 }
 
 #menu-toggle:hover {
-  background-color: #52e0c8; /* Slightly darker hover effect */
-  transform: scale(1.05);    /* Subtle zoom effect */
+  transform: scale(1.05); /* Subtle zoom effect */
+  border-color: #52e0c8; /* Change border color slightly */
 }
 
 #menu-toggle:focus {
@@ -279,14 +281,13 @@ main {
               0 4px 8px rgba(0, 0, 0, 0.15); /* Improved shadow */
 }
 
-/* Section styling */
 section {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Space between sections */
 }
 
 /* Section Heading Styling */
 section h2 {
-  font-size: 1.2rem; /* Increase heading size */
+  font-size: 2.0rem; /* Increase heading size */
   font-weight: bold; /* Ensure it stands out */
   margin-bottom: 0.5rem;
   color: #64ffda;
@@ -294,15 +295,15 @@ section h2 {
 
 /* Section Subtext Styling */
 section p {
-  font-size: 1.2rem; /* Increase subtext size */
-  margin: 0; /* Maintain clean spacing */
+  font-size: 1.3rem; /* Increase subtext size */
+  margin: 2px; /* Maintain clean spacing */
   color: #e0e0e0; /* Softer text color */
 }
 
 /* Adjust Icon Alignment (Optional) */
 .icon {
-  width: 28px; /* Slightly larger icons */
-  height: 28px;
+  width: 36px; /* Slightly larger icons */
+  height: 36px;
   margin-right: 10px; /* Adjust spacing */
   vertical-align: bottom; /* Align with text */
 }
@@ -385,6 +386,29 @@ a:active {
   transform: scale(0.95); /* Press-down effect */
 }
 
+/* Target unordered list */
+ul {
+  list-style: circle; /* Remove bullets */
+  padding: 10; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Optional: Add spacing between list items */
+ul li {
+  color: #64ffda; /* Match theme color */
+  margin-bottom: 5px; /* Space between list items */
+}
+
+/* Optional: Style links inside list items */
+ul li a {
+  text-decoration: none; /* Remove underline from links */
+  color: #64ffda; /* Match theme color */
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #555; /* Change link color on hover */
+}
 
 /* Links list styling */
 .links-list {
@@ -481,28 +505,31 @@ a:active {
   transform: scale(1.1); /* Subtle zoom on hover */
 }
 
-#nasa-sponsorship {
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: linear-gradient(135deg, #1f1f1f, #121212);
-  border: 1px solid #64ffda;
-  border-radius: 8px;
+#nasa-space-grant {
+  margin: 1rem auto;
+  padding: 1rem;
+  background: transparent; /* Remove the box background */
+  border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
+  border-radius: 0; /* Remove border-radius for a cleaner, inline look */
+  color: #b0b0b0; /* Muted color for a footnote effect */
+  text-align: left; /* Align the text with the main content */
+  font-size: 0.9rem; /* Reduce font size to make it less prominent */
+  line-height: 1.5; /* Adjust line-height for readability */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  color: #e0e0e0;
-  text-align: center;
 }
 
-#nasa-sponsorship h2 {
-  color: #64ffda;
-  margin-bottom: 1rem;
+#nasa-space-grant h2 {
+  color: #52e0c8; /* Slightly subdued color for the heading */
+  font-size: 1.1rem; /* Smaller size to match footnote style */
+  margin-bottom: 0.5rem;
+  font-weight: bold; /* Ensure it stands out slightly as the section header */
 }
 
-#nasa-sponsorship p {
-  margin: 0.5rem 0;
-  font-size: 1rem;
-  line-height: 1.6;
+#nasa-space-grant p {
+  margin: 0.2rem 0; /* Reduce margin between paragraphs */
+  font-size: 0.85rem; /* Further reduce font size for a footnote feel */
+  color: #a0a0a0; /* Muted gray to separate it from the main content */
 }
-
 
 /* Section link styling */
 .section-link {
@@ -596,16 +623,18 @@ a:active {
 /* Style for the #links container */
 #links {
   display: block; /* Ensure the container behaves like a block-level element */
-  padding: 15px; /* Match padding for consistency */
+  padding: 15px; /* Padding to match other sections */
   text-decoration: none; /* Remove underline (for links inside) */
   color: #FFFFFF; /* Default text and icon color */
   background: transparent; /* Transparent background */
   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
   border-radius: 8px; /* Rounded corners for card-like design */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
-  max-width: auto; /* Optional: Limit width */
+  max-width: auto; /* Optional: Restrict max width to align with others */
   margin: 20px auto; /* Center the section horizontally */
+  box-sizing: border-box; /* Include padding in width calculations */
 }
+
 
 /* Hover effect for the #links container */
 #links:hover {
@@ -619,12 +648,13 @@ a:active {
   align-items: center; /* Align icon and text vertically */
   gap: 16px; /* Space between icon and text */
   font-size: 2.5rem; /* Match heading size */
-  margin: 0; /* Remove default margin */
+  margin: 5px; /* Remove default margin */
   justify-content: center; /* Center the content */
 }
 
 /* Icon container inside the #links */
 #links p {
+  line-height: 1.4;
   display: flex; /* Arrange icons in a row */
   justify-content: center; /* Center icons horizontally */
   align-items: center; /* Align icons vertically */
@@ -638,7 +668,6 @@ a:active {
   width: 36px; /* Icon size */
   height: 36px;
   fill: #64ffda; /* Default icon color */
-  
   transition: transform 0.3s, fill 0.3s; /* Smooth hover effects */
 }
 
@@ -648,3 +677,79 @@ a:active {
   fill: #555; /* Change color on hover */
 }
 
+/* General styles for the #projects section */
+#projects {
+  display: block;
+  padding: 15px;
+  color: #FFFFFF;
+  background: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin: 20px auto;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Styling for the project list */
+.project-list {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+.project-list li {
+  margin-bottom: 20px; /* Add space between list items */
+}
+
+/* Styling for the individual project heading */
+.project-list h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: 600; /* Make the heading bold */
+}
+
+/* Reduce space between heading and paragraph */
+.project-list h3 + p {
+  margin-top: 8px; /* Add a small gap between heading and paragraph */
+  margin-bottom: 0; /* Remove bottom margin */
+  font-size: 1.0rem; /* Ensure consistent text size */
+  line-height: 1.5; /* Improve readability */
+}
+
+/* Link styling for the project headings */
+.project-list h3 a {
+  text-decoration: none; /* Remove underline */
+  color: #64ffda; /* Default link color */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-list h3 a:hover {
+  color: #555; /* Change color on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Paragraph styling for project descriptions */
+.project-list p {
+  color: #FFFFFF; /* Set text color */
+  font-weight: 400; /* Lighter weight for descriptions */
+}
+
+
+#quotes {
+  display: block; /* Ensure the container behaves like a block-level element */
+  padding: 15px; /* Match padding for consistency */
+  text-decoration: none; /* Remove underline (for links inside) */
+  color: #FFFFFF; /* Default text and icon color */
+  background: transparent; /* Transparent background */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  border-radius: 8px; /* Rounded corners for card-like design */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Consistent shadow */
+  max-width: auto; /* Optional: Limit width */
+  margin: 20px auto; /* Center the section horizontally */
+  font-size: 1.0rem;
+}
