@@ -1,7 +1,7 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-@import "https://www.nerdfonts.com/assets/css/webfont.css"
+@import url("https://www.nerdfonts.com/assets/css/webfont.css")
 
 /* Font Styles */
 .atkinson {
@@ -19,7 +19,7 @@ h2 .icon {
   position: relative; /* Adjust position slightly */
 }
 
-.material-icons::hover {
+.material-icons hover {
   color: #555; /* Hover color */
 }
 
@@ -33,6 +33,16 @@ h2 .icon {
   color: #64ffda; /* Icon color */
   background-color: transparent; /* Remove conflicting background color */
   position: relative; /* Adjust position slightly */
+}
+
+/* Center the section content */
+#share {
+  display: flex; /* Set the section as a flex container */
+  justify-content: center; /* Center the button horizontally */
+  align-items: center; /* Center the button vertically */
+  height: auto; /* Optional: Makes the section fill the viewport */
+  text-align: center; /* Ensures text alignment */
+  margin: 0 auto; /* Remove any default margins */
 }
 
 /* Button Styling */
@@ -72,8 +82,8 @@ h2 .icon {
 #share h2 {
   color: #64ffda; /* Match theme color */
   margin-bottom: 10px; /* Space below heading */
+  text-align: center; /* Align heading text */
 }
-
 
 /* General body styling */
 body {
@@ -141,7 +151,7 @@ header {
 }
 
 header h1 {
-  font-size: 3rem; /* Enhanced font size for emphasis */
+  font-size: 3.5rem; /* Enhanced font size for emphasis */
   font-family: 'Jetbrains Mono', monospace; /* Corrected font name */
   margin: 0;
   position: relative;
@@ -207,7 +217,7 @@ nav a:hover {
   background: none;
   border: 1px solid #64ffda;
   color: #64ffda;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 0.5rem 1rem;
   cursor: pointer;
   margin-bottom: 1rem;
@@ -222,6 +232,8 @@ nav a:hover {
 #menu-toggle:focus {
   outline: 2px solid #64ffda; /* Accessibility focus outline */
 }
+
+
 
 #mobile-nav.hidden {
   display: none;
@@ -261,7 +273,7 @@ section {
 
 /* Section Heading Styling */
 section h2 {
-  font-size: 1.8rem; /* Increase heading size */
+  font-size: 1.2rem; /* Increase heading size */
   font-weight: bold; /* Ensure it stands out */
   margin-bottom: 0.5rem;
   color: #64ffda;
@@ -279,9 +291,8 @@ section p {
   width: 28px; /* Slightly larger icons */
   height: 28px;
   margin-right: 10px; /* Adjust spacing */
-  vertical-align: middle; /* Align with text */
+  vertical-align: bottom; /* Align with text */
 }
-
 
 /* Footer styling */
 footer {
@@ -407,25 +418,18 @@ a:active {
   object-fit: cover; /* Ensure the content scales correctly */
 }
 
-/* Keyframes for Glide-In */
-@keyframes glideIn {
-  0% {
-    transform: translateX(-100%); /* Start off-screen to the left */
-    opacity: 0; /* Invisible */
-  }
-  100% {
-    transform: translateX(0); /* Slide into position */
-    opacity: 1; /* Fully visible */
-  }
+.embed-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 500px;
 }
 
-/* Embed and Iframe Styling */
-embed, iframe {
-  border: none; /* Remove borders */
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  animation: glideIn 1.5s ease-out; /* Apply the glide-in animation */
-  opacity: 0; /* Ensure it's invisible until animation starts */
+.embed-container iframe {
+  position: relative;
+  animation: glideIn 1.5s ease-out;
+  -webkit-animation: glideIn 1.5s ease-out;
+  opacity: 0;
 }
 
 
@@ -521,12 +525,13 @@ embed, iframe {
 }
 
 /* Heading styling */
-.section-link h2
+.section-link h2{
   display: flex;
   align-items: center; /* Align icon and text */
   gap: 8px; /* Space between icon and text */
-  font-size: 1.5rem;
+  font-size: 2.0rem;
   margin: 0;
+  justify-content: center;
 }
 
 /* Learn More styling */
@@ -535,8 +540,8 @@ embed, iframe {
   align-items: center; /* Align icon and text */
   gap: 8px; /* Space between icon and text */
   margin-top: 8px; /* Add spacing below the heading */
-  font-size: 1rem; /* Adjust text size */
-  color: #64ffda; /* Accent color */
+  font-size: 1.3rem; /* Adjust text size */
+  color: #FFFFFF; /* Accent color */
 }
 
 /* Icon styling */
@@ -553,14 +558,6 @@ embed, iframe {
   filter: brightness(0.8); /* Slightly dim icon on hover */
 }
 
-.icon {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  stroke-width: 2; /* Maintain SVG stroke width */
-  transition: stroke 0.3s ease; /* Smooth transition for stroke color */
-  position: relative; /* Adjust position slightly */
-}
 
 /* Profile Section Styling */
 #profile {
@@ -614,4 +611,45 @@ embed, iframe {
 #profile a:hover {
   color: #52e0c8; /* Slightly brighter on hover */
   transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Style for the section container */
+#links {
+  display: flex; /* Set the container as a flexbox */
+  flex-direction: column; /* Ensure items are stacked vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Ensures text is centered */
+  gap: 16px; /* Adds space between the heading and icons */
+}
+
+/* Style for the heading */
+#links h2 {
+  display: flex; /* Flexbox for heading to align icon and text */
+  align-items: center; /* Align icon and text vertically */
+  justify-content: center; /* Center the heading content */
+  gap: 8px; /* Space between icon and "Connect With Me" text */
+  font-size: 2rem; /* Adjust font size */
+  color: #64ffda; /* Your desired color */
+}
+
+/* Style for the icons container */
+#links p {
+  display: flex; /* Set the icons as flex children */
+  justify-content: center; /* Center icons horizontally */
+  align-items: center; /* Align icons vertically */
+  gap: 16px; /* Space between individual icons */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for individual icons */
+#links .icon svg {
+  width: 32px; /* Adjust icon size */
+  height: 32px;
+  fill: #64ffda; /* Icon color */
+  transition: transform 0.3s, fill 0.3s; /* Add smooth hover effect */
+}
+
+#links .icon svg:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+  fill: #52e0c8; /* Change color on hover */
 }
