@@ -1157,3 +1157,57 @@ ul li a:hover {
   margin-right: 5px; /* Space between bullet and text */
   vertical-align: middle; /* Align with text */
 }
+
+/* Section Styling (Reusable for Multiple Sections) */
+.embed-section {
+  text-align: center; /* Center the content */
+  margin: 2rem auto; /* Add spacing around the section */
+  padding: 1rem; /* Padding for spacing inside the section */
+}
+
+/* Heading Styling */
+.embed-section h2 {
+  color: #64ffda; /* Match the theme */
+  font-size: 2rem; /* Adjust heading size */
+  margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+/* Embed Container Styling (Reusable for Any Embed) */
+.embed-container {
+  max-width: 100%; /* Ensure iframe or content scales responsively */
+  margin: 1rem auto; /* Center the container */
+  border: 2px solid #64ffda; /* Themed border */
+  border-radius: 8px; /* Rounded edges */
+  overflow: hidden; /* Prevent overflow issues */
+  aspect-ratio: 16 / 9; /* Dynamic height based on aspect ratio */
+  display: flex; /* Center the content inside */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Embed Content Styling */
+.embed-container iframe {
+  width: 100%; /* Fill the container width */
+  height: 100%; /* Match the container height */
+  border: none; /* Remove default iframe border */
+}
+
+/* Center-Aligned Download Link */
+.embed-section a.download-link {
+  display: inline-block; /* Center the link */
+  padding: 0.5rem 1rem; /* Button padding */
+  background-color: transparent; /* Transparent background */
+  border: 1px solid #64ffda; /* Themed border color */
+  border-radius: 4px; /* Rounded corners */
+  color: #64ffda; /* Themed text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem; /* Adjust text size */
+  font-weight: bold; /* Bold text for emphasis */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effects */
+}
+
+/* Download Button Hover Effects */
+.embed-section a.download-link:hover {
+  background-color: #64ffda; /* Highlight background on hover */
+  color: #121212; /* Dark text on hover */
+}
