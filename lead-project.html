@@ -23,6 +23,23 @@
         </p>
         </section>
 
+        <section id="poster">
+          <h2>Project Poster</h2>
+          
+          <!-- Display the image (PDF preview, embedded if necessary) -->
+          <div class="embed-container">
+            <iframe src="images/pdsa_cover.pdf" title="Project Poster"></iframe>
+          </div>
+        
+          <!-- Protected download link -->
+          <p class="center-align">
+            <a href="images/pdsa.pdf" class="download-link" data-confirm="Are you sure you want to download the project poster?" download>
+              Download Poster
+            </a>
+          </p>
+        </section>
+        
+
         <section id="objectives">
             <h2 class="key-findings">Objectives</h2>
             <ul class="findings-list">
@@ -76,14 +93,29 @@
         </p>
     </section>
 
+    <section id="menu">
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+      </div>
+  
+      <nav id="mobile-nav" class="hidden">
+        <span><a href="about.html">About Me</a></span>
+        <span><a href="research.html">Research</a></span>
+        <span>
+          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
+        </span>      
+        <span><a href="connect.html">Connect</a></span>
+      </nav>
+    </section>
+
   </main>
-
-
 
   <footer>
     <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
     <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
     <p><a href="research.html" target="_self">Back to Research</a></p>
   </footer>
+  <script src="js/menu-toggle.js"></script>
+  <script src="js/download-manager.js"></script> 
 </body>
 </html>
