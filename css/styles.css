@@ -796,6 +796,8 @@ ul li a:hover {
   color: #e0e0e0; /* Light text for readability */
   font-family: 'JetBrains Mono', monospace; /* Matches the site font */
   line-height: 1.8; /* Improves text readability */
+  border-left: 3px solid #64ffda; /* Add a left border for emphasis */
+  border-radius: 8px; /* Rounded corners for a card-like design */
 }
 
 /* Profile Image Styling */
@@ -904,6 +906,8 @@ ul li a:hover {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   margin: 20px auto;
+  border-left: 3px solid #64ffda; /* Add a left border for emphasis */
+  border-radius: 8px; /* Rounded corners for a card-like design */
 }
 
 #projects h2 {
@@ -1101,4 +1105,55 @@ ul li a:hover {
   margin: 1.0rem; /* Reduce margin between paragraphs */
   font-size: 0.85rem; /* Further reduce font size for a footnote feel */
   color: #a0a0a0; /* Muted gray to separate it from the main content */
+}
+
+/* Style the section */
+#connect-links {
+  text-align: left; /* Center align the content */
+  margin: 20px auto; /* Add spacing around the section */
+  padding: 20px; /* Add padding for better spacing */
+  border-left: 3px solid #64ffda; /* Add a left border for emphasis */
+  border-radius: 8px; /* Rounded corners for a card-like design */
+}
+
+/* Style the heading */
+#connect-links h2 {
+  font-size: 1.8em; /* Adjust heading size */
+  color: #64ffda; /* Match theme color */
+  margin-bottom: 15px; /* Add spacing below heading */
+}
+
+/* Style the unordered list */
+.connect-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style individual list items */
+.connect-list li {
+  margin: 10px 0; /* Add vertical spacing between list items */
+}
+
+/* Style the links */
+.connect-list a {
+  text-decoration: none; /* Remove underline */
+  color: #64ffda; /* Match theme color */
+  font-size: 1.2em; /* Increase link font size */
+  transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Add hover effects to links */
+.connect-list a:hover {
+  color: #555; /* Change link color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
+}
+
+/* Optional: Add icons or custom bullets */
+.connect-list li::before {
+  content: "• "; /* Custom bullet */
+  color: #64ffda; /* Match theme color */
+  font-size: 1.5em; /* Adjust bullet size */
+  margin-right: 5px; /* Space between bullet and text */
+  vertical-align: middle; /* Align with text */
 }
