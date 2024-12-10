@@ -305,6 +305,32 @@ section p {
   color: #e0e0e0; /* Softer text color */
 }
 
+/* Reset and unify hover styles for all SVG icons */
+.icon svg, .icon .linkedin-icon, .icon .github-icon, .icon .size-6 {
+  fill: currentColor; /* Ensure the icon uses the current text color */
+  transition: fill 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Ensure no fading to grey on hover */
+.icon:hover svg, 
+.icon:hover .linkedin-icon, 
+.icon:hover .github-icon, 
+.icon:hover .size-6 {
+  fill: #64ffda; /* Replace grey with your preferred hover color (e.g., ITS red) */
+}
+
+/* Optional: Change text color on hover for parent links */
+.section-link:hover, 
+.icon:hover {
+  color: #555; /* Match hover color to ITS theme */
+  text-decoration: none; /* Remove underline if desired */
+}
+
+/* Smooth transitions for all hoverable icons and links */
+.icon, .section-link {
+  transition: color 0.3s ease, fill 0.3s ease;
+}
+
 /* Adjust Icon Alignment (Optional) */
 .icon {
   width: 36px; /* Slightly larger icons */
