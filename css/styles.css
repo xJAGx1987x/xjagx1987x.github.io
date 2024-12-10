@@ -555,6 +555,36 @@ ul li a:hover {
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* Acknowledgements Section Styling */
+#acknowledgements {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: linear-gradient(135deg, #1f1f1f, #121212); /* Matching gradient background */
+  border-left: 3px solid #64ffda; /* Subtle left border */
+  border-radius: 8px; /* Rounded corners for a card-like design */
+  color: #e0e0e0; /* Standard text color for sections */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); /* Add a subtle shadow */
+  text-align: left; /* Align text with the content */
+  font-size: 0.9rem; /* Match font size of the NASA section */
+  line-height: 1.6; /* Improve readability */
+}
+
+/* Acknowledgements Heading Styling */
+#acknowledgements h2 {
+  color: #64ffda; /* Teal accent for headings */
+  font-size: 1.2rem; /* Slightly larger heading size */
+  font-weight: bold; /* Ensure it stands out */
+  margin-bottom: 0.5rem; /* Add space below heading */
+  margin: 16px ;
+}
+
+/* Acknowledgements Paragraph Styling */
+#acknowledgements .acknowledgements-content p {
+  margin: 1.0rem; /* Space between paragraphs */
+  color: #b0b0b0; /* Muted text color */
+  font-size: 0.85rem; /* Slightly smaller font size for footnote effect */
+}
+
 
 /* Credits Section */
 #credits {
@@ -562,7 +592,7 @@ ul li a:hover {
   padding: 1rem;
   background: transparent; /* Match NASA section background */
   border-left: 3px solid #64ffda; /* Add a left border for emphasis */
-  border-radius: 0; /* Keep a clean, inline look */
+  border-radius: 8px; /* Rounded corners for a card-like design */
   color: #b0b0b0; /* Muted color for a footnote effect */
   text-align: left; /* Align text with the main content */
   font-size: 0.9rem; /* Match NASA's reduced font size */
@@ -665,7 +695,7 @@ ul li a:hover {
   padding: 1rem;
   background: transparent; /* Remove the box background */
   border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
-  border-radius: 0; /* Remove border-radius for a cleaner, inline look */
+  border-radius: 8; /* Remove border-radius for a cleaner, inline look */
   color: #b0b0b0; /* Muted color for a footnote effect */
   text-align: left; /* Align the text with the main content */
   font-size: 0.9rem; /* Reduce font size to make it less prominent */
@@ -719,7 +749,6 @@ ul li a:hover {
   filter: brightness(0.8); /* Slightly dim icon on hover */
   width: 48;
 }
-
 
 /* Profile Section Styling */
 #profile {
@@ -893,7 +922,6 @@ ul li a:hover {
   font-weight: 400; /* Lighter weight for descriptions */
 }
 
-
 #quotes {
   margin: 1rem auto;
   padding: 1rem;
@@ -1012,42 +1040,3 @@ ul li a:hover {
   vertical-align: middle; /* Align icon with text */
 }
 
-
-header h1 {
-  color: #64ffda;
-  font-size: 2rem;
-  margin: 0;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #b0b0b0;
-}
-
-#research-container {
-  margin: 2rem auto;
-  padding: 2rem;
-  background: linear-gradient(135deg, #1f1f1f, #121212);
-  border: 2px solid #64ffda;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-  width: 90%;
-  max-width: 800px;
-}
-
-#research-container h2 {
-  font-size: 1.5rem;
-  color: #64ffda;
-  margin-bottom: 1rem;
-}
-
-#research-container p,
-#research-container ul {
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-#research-container ul {
-  list-style-type: disc;
-  padding-left: 2rem;
-}
