@@ -1080,32 +1080,38 @@ ul li a:hover {
 
 /* Acknowledgements Section Styling */
 #acknowledgements {
-  margin: 1rem auto;
-  padding: 1rem;
-  background: transparent; /* Remove the box background */
-  border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
-  border-radius: 8; /* Remove border-radius for a cleaner, inline look */
-  color: #b0b0b0; /* Muted color for a footnote effect */
-  text-align: left; /* Align the text with the main content */
-  font-size: 0.9rem; /* Reduce font size to make it less prominent */
-  line-height: 1.5; /* Adjust line-height for readability */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin: 2rem auto; /* Add space above and below the section */
+  padding: 2rem; /* Add padding inside the section */
+  border-left: 4px solid #64ffda; /* Emphasize with a left border */
+  background: transparent; /* Keep background transparent */
 }
 
-/* Acknowledgements Heading Styling */
-#acknowledgements h2 {
-  color: #52e0c8; /* Slightly subdued color for the heading */
-  font-size: 1.1rem; /* Smaller size to match footnote style */
-  margin-bottom: 0.5rem;
-  font-weight: bold; /* Ensure it stands out slightly as the section header */
+/* Inner Container for Specific Spacing */
+.acknowledgements-container {
+  padding: 1.5rem; /* Add internal padding for separation */
+  background: transparent; /* Keep the container transparent */
+  max-width: 800px; /* Limit the width for readability */
+  margin: 0 auto; /* Center the container within the section */
 }
 
-/* Acknowledgements Paragraph Styling */
-#acknowledgements .acknowledgements-content p {
-  margin: 1.0rem; /* Reduce margin between paragraphs */
-  font-size: 0.85rem; /* Further reduce font size for a footnote feel */
-  color: #a0a0a0; /* Muted gray to separate it from the main content */
+/* Heading Styling for Acknowledgements */
+.acknowledgements-heading {
+  color: #52e0c8; /* Themed color for the heading */
+  font-size: 1.5rem; /* Adjust heading size */
+  font-weight: bold; /* Make the heading stand out */
+  margin-bottom: 1.5rem; /* Space below the heading */
+  text-align: left; /* Align text to the left */
 }
+
+/* Paragraph Styling for Acknowledgements */
+.acknowledgements-content p {
+  font-size: 0.95rem; /* Adjust font size */
+  line-height: 1.8; /* Improve readability with line spacing */
+  color: #a0a0a0; /* Muted color for subtlety */
+  margin-top: 1rem; /* Add space above the paragraph */
+  margin-bottom: 1rem; /* Add space below the paragraph */
+}
+
 
 /* Style the section */
 #connect-links {
