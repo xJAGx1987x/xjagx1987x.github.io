@@ -695,7 +695,7 @@ ul li a:hover {
   padding: 1rem;
   background: transparent; /* Remove the box background */
   border-left: 3px solid #64ffda; /* Add a subtle left border for emphasis */
-  border-radius: 8; /* Remove border-radius for a cleaner, inline look */
+  border-radius: 8px;
   color: #b0b0b0; /* Muted color for a footnote effect */
   text-align: left; /* Align the text with the main content */
   font-size: 0.9rem; /* Reduce font size to make it less prominent */
