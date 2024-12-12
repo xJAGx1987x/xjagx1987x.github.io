@@ -1,21 +1,43 @@
+.main-content,
+.static-card,
+main,
+.research-section {
+    margin: 1rem auto; /* Center alignment with consistent spacing */
+    padding: 15px; /* Equal padding for all sections */
+    max-width: 100%; /* Ensure responsiveness */
+    width: 100%; /* Full width for containers */
+    border-radius: 25px; /* Consistent rounded corners */
+    font-size: 16px; /* Uniform base font size for readability */
+    line-height: 1.8; /* Match spacing for readability */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Unified subtle shadow for depth */
+    overflow: hidden; /* Prevent content overflow */
+    font-family: var(--font-main); /* Consistent font family */
+    word-wrap: break-word; /* Ensure text responsiveness */
+}
+
+/* Specific styles for individual classes */
 .main-content {
-    max-width: 900px; /* Adjust to your preferred width */
-    width: 100%;
-    margin: 20px auto; /* Center the content */
-    padding: 0 20px; /* Add padding for smaller screens */
+    background-color: var(--accent-color); /* Vibrant background for main content */
 }
 
 .static-card {
-    background: var(--grey); /* Card background */
-    color: var(--text-color); /* Text color */
-    padding: 35px; /* Inner spacing */
-    margin: 2.5rem; /* Spacing between cards */
-    border-radius: 90px ; 
-    border-left: var(--accent-color) solid 5px;
-    border-right: var(--accent-color) solid 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    text-align: left; /* Default text alignment */
+    background: var(--background-alt); /* Subtle background for cards */
+    color: var(--text-color); /* Ensure text is readable */
+    border-left: 5px solid var(--accent-color); /* Retain left border accent */
+    border-right: 5px solid var(--accent-color); /* Retain right border accent */
+    font-size: 1rem; /* Slightly smaller font for compact cards */
+    line-height: 1.6; /* Adjust for compact spacing */
 }
+
+main {
+    background-color: var(--accent-color); /* Bright background to match the theme */
+}
+
+.research-section {
+    background-color: var(--background-alt); /* Subtle background for sections */
+    padding: 1rem; /* Reduce padding for better mobile responsiveness */
+}
+
 
 .static-card p {
     margin: 1.0rem 0;
