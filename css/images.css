@@ -1,9 +1,25 @@
+/* Responsive Content for Default Screens */
+.responsive-content {
+    display: flex; /* Use Flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 1.5rem; /* Add inner spacing */
+    margin: 1rem auto; /* Center container and add space */
+    background-color: var(--background-light); /* Light background for contrast */
+    border-radius: 15px; /* Rounded corners for a polished look */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 90%; /* Limit width to fit within screen */
+    overflow: hidden; /* Ensure content fits within the container */
+}
+
 .responsive-content iframe {
     width: 100%;
     height: auto;
     aspect-ratio: 16/9; /* Maintain aspect ratio */
-    max-width: 100%;
+    max-width: 800px; /* Set a maximum width for the iframe */
     border: none;
+    border-radius: 10px; /* Match container's rounded corners */
 }
 
 .responsive-content a.download-link {
@@ -15,92 +31,106 @@
     text-decoration: none;
 }
 
-
 /* Images: Make them responsive */
 .responsive-content img {
     display: block;
-    max-width: 100%; /* Scale the image to fit within the container */
+    max-width: 100%; /* Ensure the image scales within the container */
     height: auto; /* Maintain the aspect ratio */
-    border-radius: 10px; /* Optional: Match the card's rounded corners */
+    border-radius: 10px; /* Match container's rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
 }
 
-/* PDFs: Responsive iframe */
-.responsive-content iframe {
-    width: 100%; /* Full width of the container */
-    height: 500px; /* Set a default height for PDFs */
-    border: none; /* Remove iframe borders */
-    border-radius: 25px; /* Match card's corners */
-}
-
+/* Links */
 .responsive-content a {
     display: inline-block;
-    margin-top: 1rem; /* Add spacing above the link */
-    color: var(--accent-color); /* Accent color */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make the text stand out */
-    text-align: center; /* Center-align the link */
+    margin-top: 1rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-justify: center;
 }
 
 /* Hover effect for links */
 .responsive-content a:hover {
-    color: var(--text-muted); /* Change to white on hover */
-    text-shadow: 0 0 5px var(--background-alt); /* Add glow effect */
+    color: var(--text-muted);
+    text-shadow: 0 0 5px var(--background-alt);
 }
 
+/* Profile Image */
 .profile-img {
     display: block;
-    max-width: 100%; /* Ensures the image scales with its container */
-    height: auto; /* Maintains the aspect ratio */
-    border-radius: 50%; /* Makes it circular */
-    margin: 0 auto 1rem; /* Centers the image and adds spacing */
-    background: linear-gradient(135deg, var(--light-grey), var(--grey), var(--mid-grey)); /* Gradient with lighter tones */
-    border: 2px solid transparent; /* Transparent border for accent effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6), 0 0 10px var(--accent-color-2); /* Subtle shadow with cyan accent */
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    background: linear-gradient(135deg, var(--light-grey), var(--grey), var(--mid-grey));
+    border: 2px solid transparent;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6), 0 0 10px var(--accent-color-2);
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    padding: 10px; /* Inner padding for content */
-    overflow: hidden; /* Ensures content fits inside the frame */
+    padding: 10px;
+    overflow: hidden;
 }
 
-/* Hover effect */
+/* Profile Image Hover */
 .profile-img:hover {
-    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2), var(--light-grey)); /* Vibrant gradient on hover */
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8), 0 0 15px var(--accent-color); /* Glow with primary accent */
-    transform: scale(1.05); /* Subtle zoom effect */
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2), var(--light-grey));
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8), 0 0 15px var(--accent-color);
+    transform: scale(1.05);
 }
 
-
+/* Profile Image Container */
 .profile-img-container {
-    width: 100%; /* Full width of the container */
-    max-width: 300px; /* Restrict the maximum size */
-    margin: 2rem auto; /* Center the container */
-    padding: 1rem; /* Add padding around the image */
+    width: 100%;
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
 }
 
+/* Media Queries for Responsive Layout */
 
-  /* Media queries for mobile devices */
+/* Medium Screens (Max Width: 768px) */
 @media (max-width: 768px) {
     body {
-        font-size: 14px; /* Smaller text for mobile */
+        font-size: 14px; /* Adjust text size for medium screens */
     }
 
     .responsive-content iframe {
-        height: 300px; /* Adjust iframe height for smaller screens */
+        height: 300px; /* Reduce iframe height */
     }
 
     .responsive-content a {
         font-size: 0.9rem; /* Adjust link size */
     }
+
+    .profile-img-container {
+        max-width: 250px; /* Limit profile image size */
+    }
+
+    .profile-img {
+        padding: 8px; /* Adjust padding for smaller images */
+    }
 }
 
+/* Small Screens (Max Width: 480px) */
 @media (max-width: 480px) {
     body {
-        font-size: 12px;
+        font-size: 12px; /* Smaller text size for mobile */
     }
 
     .responsive-content iframe {
-        height: 200px;
+        height: 200px; /* Further reduce iframe height */
+    }
+
+    .responsive-content a {
+        font-size: 0.8rem; /* Make links smaller */
+    }
+
+    .profile-img-container {
+        max-width: 200px; /* Smaller profile image container */
+    }
+
+    .profile-img {
+        padding: 5px; /* Reduce padding */
     }
 }
-
