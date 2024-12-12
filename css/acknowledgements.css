@@ -44,19 +44,30 @@
 }
 
 .acknowledgements-section ul li a:hover {
-    text-decoration: underline;
+    color: var(--text-muted);
+    transform: scale(1.2);
 }
 
 .acknowledgements-section ul li a .link-icon {
     margin-left: 0.5rem;
+    color: var(--accent-color);
     font-size: 1rem;
     transform: scale(1);
     transition: transform 0.3s ease;
 }
 
 .acknowledgements-section ul li a:hover .link-icon {
+    color: var(--text-muted);
     transform: scale(1.2);
 }
+
+.link-icon {
+    margin-left: 0.5rem; /* Space between the text and the icon */
+    font-size: 1rem; /* Adjust the size */
+    color: var(--accent-color); /* Icon color */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
 
 @media (max-width: 768px) {
     .acknowledgements-section h2 {
