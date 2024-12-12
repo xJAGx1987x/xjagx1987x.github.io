@@ -1,0 +1,57 @@
+/* Acknowledgements Section Styles */
+.acknowledgements-section {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--background-dark);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.acknowledgements-section h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.acknowledgements-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.acknowledgements-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.acknowledgements-section ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+}
+
+.acknowledgements-section ul li a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.acknowledgements-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.acknowledgements-section ul li a .link-icon {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.acknowledgements-section ul li a:hover .link-icon {
+    transform: scale(1.2);
+}

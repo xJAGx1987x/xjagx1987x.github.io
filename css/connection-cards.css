@@ -93,18 +93,3 @@
     font-size: 0.9rem; /* Paragraph size */
     color: var(--text-color, #555); /* Text color */
 }
-
-/* Responsive Adjustments for Smaller Screens */
-@media (max-width: 768px) {
-    .connections-cards .card {
-        padding: 20px; /* Reduce padding for smaller screens */
-    }
-
-    .connections-cards .card h3 {
-        font-size: 1rem; /* Smaller heading size */
-    }
-
-    .connections-cards .card p {
-        font-size: 0.85rem; /* Adjust text size */
-    }
-}

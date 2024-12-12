@@ -3,7 +3,7 @@
 main,
 .research-section {
     margin: 1rem auto; /* Center alignment with consistent spacing */
-    padding: 15px; /* Equal padding for all sections */
+    padding: 8px; /* Equal padding for all sections */
     max-width: 900px; /* Ensure responsiveness */
     width: 100%; /* Full width for containers */
     width: 100%; /* Full width for containers */
@@ -96,3 +96,9 @@ main,
     color: var(--background-color);
 }
 
+.static-card h1, h2 {
+    font-size: 1.5rem; /* Larger heading for emphasis */
+    margin: 1rem 0; /* Spacing for readability */
+    color: var(--accent-color); /* Consistent accent color */
+    text-align: center; /* Center alignment for headings */
+}   

@@ -1,219 +1,126 @@
-main {
-    margin: 1rem auto;
-    padding: 15px; /* Adjusted to balance between the two conflicting rules */
-    max-width: 100%; /* Ensure responsiveness */
-    width: 100%;
-    background-color: var(--accent-color); /* Background matches the theme */
-    border-radius: 25px; /* Consistent rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
-    font-size: 16px; /* Base font size for body text */
-    line-height: 1.8; /* Ensures readability */
-    overflow: hidden; /* Prevent content overflow */
-}
-
-
-.research-section {
-    padding: 1rem; /* Reduce padding for mobile */
-    max-width: 100%; /* Ensure responsiveness */
-    margin: 0 auto;
-    font-size: 1rem;
-    word-wrap: break-word; 
-    border-radius: 25px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: var(--font-main);
-    line-height: 1.6;
-    padding: 3rem ;
-    background-color: var(--background-alt);
-}
-
-
-.research-section .research-body {
-    background-color: rgb(32, 32, 32);
-    background-image: 
-        linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), 
-        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
-        linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), 
-        linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
-    background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
-    background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
-    color: var(--accent-color);
-    font-family: var(--font-main);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-    border-radius: 8px;
-    max-width: 100%; /* Ensure responsiveness */
-    margin: 0 auto;
-
-}
-
-
-.research-section p,
-.research-section ul {
-    color: var(--text-color);
-    margin-bottom: 1rem;
-    font-size: 1.2rem; /* Ensure consistency for paragraphs and lists */
+research-body {
+    margin: 0;
+    padding: 0;
     line-height: 1.6;
 }
 
-.research-section ul.findings-list {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    color: var(--text-muted);
-    font-size: 0.95rem;
+/* Header Styles */
+.research-header {
+    color: var(--background-alt);    
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 5px solid var(--background-dark);
 }
 
-.research-section ul.findings-list:hover {
-    list-style-type: disc;
-    margin-left: 1.5rem;
-    color: var(--accent-color); 
-    cursor: default;
+.research-header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
-.research-section ul.findings-list li {
-    margin-bottom: 0.8rem;
-}
-
-
-.research-section strong {
-    color: var(--accent-color);
-    font-size: 1.1rem; /* Highlight important text */
-}
-
-.research-section a.linkedin-link {
-    display: flex; /* Enables flexbox for the link itself */
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    margin: 1.5rem auto; /* Centers the link in the section and adds spacing */
-    text-decoration: none;
-    color: var(--accent-color);
-    font-size: 1rem; /* Match body text size for links */
-    font-weight: bold;
-    max-width: 400px; /* Optional: Set a maximum width if needed */
-}
-
-.research-section a.linkedin-link:hover {
-    color: var(--text-muted);
-}
-
-.research-section a.linkedin-link .material-icons {
-    margin-right: 0.5rem;
+.research-header .subtitle {
+    margin: 0;
     font-size: 1.2rem;
-    text-align: text-bottom;
 }
 
-.research-section .current-status,
-.research-section .expected-impact {
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-    color: var(--text-color);
-    font-weight: bold;
-}
-
-
-/* General section styling */
-#funding {
-    background-color: var(--background-alt); /* Matches other sections */
+/* Main Container */
+.research-container {
+    max-width: 900px;
+    margin: 2rem auto;
     padding: 2rem;
-    margin: 2rem auto; /* Adds spacing between sections */
-    max-width: 800px; /* Matches the layout width */
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    font-family: var(--font-main);
-    line-height: 1.6;
+    background-color: var(--background-alt);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-#funding h2 {
-    color: var(--accent-color); /* Highlights the heading */
-    font-size: 1.5rem; /* Slightly larger heading size */
-    text-align: center; /* Center-align the title */
+/* Section Styles */
+.research-section {
+    margin-bottom: 2rem;
+}
+
+.research-section h2 {
+    font-size: 1.8rem;
+    color: var(--accent-color);
     margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
 }
 
-#funding p {
-    color: var(--text-color);
+.research-section p {
     font-size: 1rem;
     margin-bottom: 1rem;
-    text-align: center; /* Center-align the introductory text */
+    line-height: 1.8;
+    color: var(--text-muted);
 }
 
-#funding ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0; /* Remove padding from the list */
-    margin: 0; /* Remove default margin */
-    text-align: center; /* Center-align the list items */
+.research-section p strong {
+    color: var(--accent-color);
 }
 
-#funding ul li {
-    margin-bottom: 0.8rem; /* Spacing between list items */
-    display: flex; /* Use flexbox for better alignment */
-    justify-content: center; /* Center-align each list item */
-    align-items: center; /* Align content vertically */
+.research-list {
+    list-style: disc;
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+    background-color: var(--background-light);
+    transition: background-color 0.3s ease;
 }
 
-#funding ul li::marker {
-    color: var(--accent-color); /* Match the bullet color to the theme */
-    font-size: 1rem; /* Optional: Adjust bullet size */
+.research-list:hover {
+    background-color: var(--background-dark); /* Optional for visual feedback */
 }
 
-#funding ul a {
-    color: var(--accent-color); /* Link color matches site theme */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Highlight link text */
-    display: flex; /* Aligns link content with icons */
-    align-items: center; /* Vertically aligns text and icons */
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+.research-list:hover li {
+    color: var(--accent-color);
+    transition: color 0.3s ease;
 }
 
-#funding ul a:hover {
-    color: var(--text-muted); /* Change color on hover */
-    text-shadow: 0 0 5px var(--background-alt); /* Subtle glow effect */
+
+.research-list li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: var(--text-muted);
 }
 
-#funding ul a .material-icons {
-    margin-right: 0.5rem; /* Space between icon and text */
-    font-size: 1.2rem; /* Adjust icon size */
+
+/* Footer Styles */
+.research-footer {
+    background-color: var(--background-dark);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top: 5px solid var(--accent-color);
 }
 
-/* General styles for smaller screens */
+.research-footer a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.research-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    /* Apply to all sections (reduce padding and font size globally) */
-    .section-wrapper,
-    .research-section,
-    #funding {
-        padding: 1rem; /* Shared padding adjustment */
-        font-size: 0.9rem; /* Shared font size adjustment */
+    .research-container {
+        padding: 1rem;
     }
 
-    /* Paragraphs and lists in all sections */
-    .research-section p,
-    .research-section ul,
-    #funding p,
-    #funding ul {
-        font-size: 1rem; /* Shared font size for text elements */
+    .research-header h1 {
+        font-size: 1.5rem;
     }
 
-    /* Specific to research-section links */
-    .research-section a.linkedin-link {
+    .research-header .subtitle {
+        font-size: 1rem;
+    }
+
+    .research-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .research-section p, .research-list li {
         font-size: 0.9rem;
     }
-
-    .research-section a.linkedin-link .material-icons {
-        font-size: 1rem; /* Icon size for research links */
-    }
-
-    /* Specific to #funding section */
-    #funding h2 {
-        font-size: 1.2rem; /* Adjust heading size */
-    }
-
-    #funding ul a {
-        font-size: 0.9rem; /* Adjust link font size */
-    }
-
-    #funding ul a .material-icons {
-        font-size: 1rem; /* Icon size for funding links */
-    }
 }
+
+

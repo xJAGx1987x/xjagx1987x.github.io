@@ -1,46 +1,64 @@
+/* Wrapper Styling */
+#menu-wrapper {
+    padding: 0.25rem; /* Add padding inside the wrapper for spacing */
+    margin: 1rem auto; /* Center the wrapper and add vertical spacing */
+    max-width: 900px; /* Limit the total width of the wrapper */
+    box-sizing: border-box; /* Include padding in total dimensions */
+    text-align: center; /* Center contents horizontally */
+}
+
+/* Menu Toggle Button Styling */
 #menu-toggle {
     background-color: var(--accent-color);
     color: var(--background-alt);
     font-size: 1.2rem;
     border: none;
     border-radius: 25px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem; /* Interior padding (spacing inside the button) */
     cursor: pointer;
-    transition: var(--background-alt) 0.3s ease, transform 0.2s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
     border: 3px solid var(--background-alt);
-    text-align: center; /* Center content horizontally */
-    margin: 0 auto; /* Ensure it's properly aligned within the page */
+    text-align: center; /* Center text horizontally */
     width: 100%; 
-    max-width: 900px; /* Limit width to prevent overflow */
-    display: center ;
+    max-width: 880px; /* Limit width to prevent overflow */
+    display: block; /* Ensure it aligns properly within its container */
+    box-sizing: border-box; /* Include padding and borders in the total width */
 }
 
 #menu-toggle:hover {
     background-color: var(--background-alt);
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight hover growth */
     border: 3px solid var(--accent-color);
     border-radius: 25px;
     color: var(--accent-color);
+    box-sizing: border-box; /* Ensure scaling respects containment */
 }
 
+/* Mobile Navigation Menu Styling */
 #mobile-nav {
     display: none; /* Hidden by default */
     background-color: transparent;
-    margin-top: 1rem;
-    padding: 0;
+    padding: 1rem; /* Add interior padding for spacing */
+    width: 100%; /* Ensure it spans the full width of the parent container */
+    max-width: 900px; /* Match the max width of the wrapper */
+    box-sizing: border-box; /* Include padding and borders in width calculation */
+    overflow: hidden; /* Prevent overflow */
+    vertical-align: middle; /* Align to the top of the parent container */
 }
 
 #mobile-nav.visible {
     display: block; /* Show the menu when the 'visible' class is added */
 }
 
+/* List Item Styling */
 #mobile-nav li {
     margin: 0; 
     width: 100%; /* Ensure the list items span the full width */
-    max-width: 900px; /* Limit width to prevent overflow */
+    overflow: hidden; /* Hide any overflowing content */
+    padding: 0.5rem;
 }
 
-
+/* List Container Styling */
 #mobile-nav ul {
     list-style: none; /* Remove bullets */
     margin: 0;
@@ -49,41 +67,31 @@
     flex-direction: column; /* Stack items vertically */
     width: 100%;
     max-width: 900px; /* Limit width to prevent overflow */
-    gap: 1.0rem; /* Add spacing between buttons */
+    gap: 0.25rem 0; /* Add spacing between buttons */
 }
 
+/* Navigation Links Styling */
 #mobile-nav a {
     display: block; /* Ensure the anchor takes up its container's width */
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
     padding: 0.75rem 2rem; /* Inner spacing for buttons */
-    color: var(--accent-color); /* Text color */
-    background-color: transparent; /* Transparent button background */
-    border: 3px solid var(--accent-color); /* Button border */
+    color: var(--background-alt); /* Text color */
+    background-color: var(--accent-color); /* Button background */
+    border: 3px solid var(--background-alt); /* Button border */
     border-radius: 25px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
     width: 100%; /* Make the button span the full width of the parent container */
     text-align: center; /* Ensure text is centered */
     box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin: 0.5rem 0; /* Add vertical spacing between menu items */
 }
 
 #mobile-nav a:hover {
-    background-color: var(--accent-color); /* Flip background on hover */
-    color: var(--background-alt); /* Flip text color on hover */
-    transform: scale(1.05); /* Slight hover effect */
+    background-color: var(--background-alt); /* Flip background on hover */
+    color: var(--accent-color); /* Flip text color on hover */
+    border: 3px solid var(--accent-color); /* Flip border color on hover */
+    transform: scale(1.05); /* Slight hover growth */
+    box-sizing: border-box; /* Prevent scaling from breaking containment */
 }
-
-@media (max-width: 768px) {
-    #mobile-nav ul {
-        width: 100%; /* Ensure the ul container takes up the full width */
-    }
-
-    #mobile-nav a {
-        width: 100%; /* Ensure buttons stretch across the screen */
-        font-size: 1.2rem; /* Slightly larger text for readability */
-        padding: 1rem; /* Add more padding for touch-friendly buttons */
-    }
-}
-
-

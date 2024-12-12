@@ -20,17 +20,117 @@
 
     /* Accent Colors */
     --accent-color: #64ffda; /* Vibrant cyan for primary highlights */
-    --accent-color-2: #82ffe4;--accent-color-2: #82ffe4;
+    --accent-color-2: #82ffe4;
     --egg-white: #f8f8f2; /* Off-white for text */  
 
     /* Text Colors */
     --text-color: #f8f8f2; /* Off-white for primary text */
     --text-muted: #a8a8a8; /* Muted grey for secondary/subtle text */
-    --text-accent: #ff79c6; /* Pink accent for highlighted text */
     
     /* Fonts */
-    --font-main: 'JetBrains Mono', monospace;
-    --font-secondary: 'Atkinson Hyperlegible', sans-serif;
+    --font-main: 'JetBrains Mono', 'Courier New', Courier, monospace;
+    --font-secondary: 'Atkinson Hyperlegible', sans-serif, Arial;
+    /* For tablets and small screens */
+
+    body {
+        background-color: rgb(32, 32, 32);
+        background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+        background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+        background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
+        color: var(--accent-color);
+        font-family: var(--font-main);
+        line-height: 1.6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+        .static-card {
+            padding: 1rem; /* Reduce padding for smaller screens */
+            font-size: 0.9rem; /* Slightly smaller font size */
+            line-height: 1.4; /* Adjust for more compact spacing */
+            margin: 1rem 0; /* Reduce margin between cards */
+        }
+
+        .static-card blockquote {
+            padding: 1rem 1.5rem; /* Reduce padding for blockquotes */
+            font-size: 0.85rem; /* Adjust text size for readability */
+        }
+
+        .static-card blockquote cite {
+            font-size: 0.75rem; /* Reduce attribution font size */
+        }
+    }
+
+    /* For mobile phones */
+    @media (max-width: 480px) {
+        .static-card {
+            padding: 0.75rem; /* Further reduce padding */
+            font-size: 0.85rem; /* Smaller text size for readability */
+            border-radius: 15px; /* Reduce corner radius for a sleeker look */
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2); /* Subtler shadow for smaller screens */
+        }
+
+        .static-card blockquote {
+            padding: 0.75rem 1rem; /* Reduce blockquote padding further */
+            font-size: 0.8rem; /* Smaller text size */
+            margin: 0.5rem 0 1rem; /* Reduce margin for compact layout */
+        }
+
+        .static-card blockquote cite {
+            font-size: 0.7rem; /* Make attribution smaller */
+            margin-top: 0.25rem; /* Reduce top margin */
+        }
+    }
+
+    /* For very large screens or desktops */
+    @media (min-width: 1200px) {
+        .static-card {
+            max-width: 1200px; /* Increase maximum width for wide screens */
+            padding: 2rem; /* Add more padding for a spacious look */
+            font-size: 1.1rem; /* Slightly larger text size for readability */
+            line-height: 1.9; /* Enhance spacing */
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow for larger screens */
+        }
+
+        .static-card blockquote {
+            font-size: 1rem; /* Larger blockquote text */
+            padding: 2rem 3rem; /* More padding for emphasis */
+        }
+
+        .static-card blockquote cite {
+            font-size: 0.9rem; /* Slightly larger citation text */
+        }
+    }
+    
+    * {
+        transition: all 0.3s ease;
+    }
+
+    /* Global fade-in animation */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            background-color: black;
+        }
+        to {
+            opacity: 3.0;
+            background-color: var(--background-color);
+        }
+    }
+
+    ::selection {
+        background-color: var(--accent-color); /* Highlight background */
+        color: var(--background-alt); /* Highlighted text color */
+    }
+    
+    ::-moz-selection {
+        background-color: var(--accent-color); /* Highlight background for Firefox */
+        color: var(--background-alt); /* Highlighted text color for Firefox */
+    }
+    
 }
 
 
@@ -41,38 +141,5 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color: rgb(32, 32, 32);
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
-    background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
-    background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
-    color: var(--accent-color);
-    font-family: var(--font-main);
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-::selection {
-    background-color: var(--accent-color); /* Highlight background */
-    color: var(--background-alt); /* Highlighted text color */
-}
-
-::-moz-selection {
-    background-color: var(--accent-color); /* Highlight background for Firefox */
-    color: var(--background-alt); /* Highlighted text color for Firefox */
-}
 
