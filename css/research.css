@@ -37,7 +37,7 @@
 .research-section ul {
     color: var(--text-color);
     margin-bottom: 1rem;
-    font-size: 1rem; /* Ensure consistency for paragraphs and lists */
+    font-size: 1.2rem; /* Ensure consistency for paragraphs and lists */
     line-height: 1.6;
 }
 
