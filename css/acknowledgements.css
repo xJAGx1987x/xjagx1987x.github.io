@@ -7,12 +7,14 @@
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    
 }
 
 .acknowledgements-section h2 {
     font-size: 1.8rem;
     color: var(--accent-color);
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .acknowledgements-section p {
@@ -55,3 +57,12 @@
 .acknowledgements-section ul li a:hover .link-icon {
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    .acknowledgements-section h2 {
+        text-align: center; /* Explicitly center the text */
+        margin: 0 auto 1rem; /* Center the margin on mobile */
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+}
+
