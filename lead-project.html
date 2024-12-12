@@ -1,118 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LEAD Center Research Support</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEAD Center Tutoring Resources</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/research.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="css/menu.css">
 </head>
-<body>
-  <header>
-    <h1>LEAD Center Research Support for STEM Tutors</h1>
-    <p>Fairmont State University | Spring 2024</p>
-  </header>
 
-  <main id="research-container">
-    <section>
-        <section id="introduction">
-        <h2>Introduction</h2>
-        <p>
-            The purpose of this project is to compile and examine LEAD Center data on STEM tutoring
-            to determine if more support is needed in STEM courses. The number of LEAD Center STEM
-            tutors has decreased, even though introductory STEM courses make up a large portion of tutor requests.
-        </p>
-        </section>
-
-        <div class="embed-container">
-          <iframe src="images/PDSA_cover.pdf" title="Project Poster"></iframe>
-        </div>
-        <p>
-          <a href="images/PDSA.pdf" class="download-link" data-confirm="Are you sure you want to download the project poster?" download>
-            Download Poster
-          </a>
-        </p>
-      </section>
-        
-
-        <section id="objectives">
-            <h2 class="key-findings">Objectives</h2>
-            <ul class="findings-list">
-              <li>Hire two students to analyze LEAD Center data from 2020–2024.</li>
-              <li>Identify gaps in STEM tutoring based on D/F/W rates in STEM courses.</li>
-              <li>Recommend hiring strategies for STEM tutors based on findings.</li>
-            </ul>
-          </section>
-          
-          <section id="findings">
-            <h2 class="key-findings">Key Findings</h2>
-            <ul class="findings-list">
-              <li>From 2020–2023, STEM tutoring visits increased from 1176 to 1667, while the number of tutors decreased.</li>
-              <li>STEM tutors spent an average of 83 hours/year supporting students.</li>
-              <li>Courses with the highest demand include College Algebra, Trigonometry, and Chemical Principles.</li>
-            </ul>
-          </section>
-          
-          <section id="recommendations">
-            <h2 class="key-findings">Recommendations</h2>
-            <ul class="findings-list">
-              <li>Hire a minimum of 20 STEM-focused tutors to meet annual demand.</li>
-              <li>Develop a consistent data collection system for student and tutor metrics.</li>
-              <li>Request increased funding from the administration to sustain tutoring services.</li>
-            </ul>
-          </section>
-          
-    </section>
-
-    <section id="acknowledgements">
-      <div class="acknowledgements-container">
-        <h2 class="acknowledgements-heading">Acknowledgements</h2>
-        <div class="acknowledgements-content">
-          <p>
-            Special thanks to Kristy Henson and Bri DiBacco for providing LEAD Center data.
-            This research was supported by the First2 Network NSF INCLUDES Alliance.
-          </p>
-        </div>
-      </div>
-    </section>
-    
-     
-    <section id="mentor-link">
-        <p>Special thanks to my mentors, <strong>Dr. Kristy Henson</strong> and <strong>Bri DiBacco</strong>, for their guidance and support throughout this research project.</p>
-        <p>
-            <a href="https://www.linkedin.com/in/kristy-henson-1803188a/" target="_blank" class="linkedin-link">
-                <span class="material-icons">link</span> Connect with Dr. Kristy Henson on LinkedIn
-            </a>
-        </p>
-        <p>
-            <a href="https://www.linkedin.com/in/bri-dibacco4studentsuccess/" target="_blank" class="linkedin-link">
-                <span class="material-icons">link</span> Connect with Bri DiBacco on LinkedIn
-            </a>
-        </p>
-    </section>
+<body id="research-body"> 
+    <header id="header">
+      <nav>
+        <ul>
+            <h1>LEAD Center Research Support for STEM Tutors</h1>
+            <p>Fairmont State University | Spring 2024</p>
+        </ul>
+      </nav>
+    </header>
 
     <section id="menu">
-      <div style="text-align: center; margin-top: 1.5rem;">
+      <div class="menu-toggle-container">
         <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
       </div>
-  
+    
       <nav id="mobile-nav" class="hidden">
-        <span><a href="about.html">About Me</a></span>
-        <span><a href="research.html">Research</a></span>
-        <span>
-          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
-        </span>      
-        <span><a href="connect.html">Connect</a></span>
+        <ul>
+          <li><a href="index.html">Home</a></li>  
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li>
+            <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>
+              Resume
+            </a>
+          </li>
+          <li><a href="connect.html">Connect</a></li>
+        </ul>
       </nav>
     </section>
 
-  </main>
+      <main id="main">
+        <section class="research-section">
+          <!-- Introduction -->
+          <p class="expected-impact">
+            The purpose of this project is to compile and examine LEAD Center data on STEM tutoring
+            to determine if more support is needed in STEM courses. The number of LEAD Center STEM
+            tutors has decreased, even though introductory STEM courses make up a large portion of tutor requests.
+          </p>
+      
+          <!-- Objectives -->
+          <h2 class="key-findings">Objectives</h2>
+          <ul class="findings-list">
+            <li>Hire two students to analyze LEAD Center data from 2020–2024.</li>
+            <li>Identify gaps in STEM tutoring based on D/F/W rates in STEM courses.</li>
+            <li>Recommend hiring strategies for STEM tutors based on findings.</li>
+          </ul>
+      
+          <!-- Key Findings -->
+          <h2 class="key-findings">Key Findings</h2>
+          <ul class="findings-list">
+            <li>From 2020–2023, STEM tutoring visits increased from 1176 to 1667, while the number of tutors decreased.</li>
+            <li>STEM tutors spent an average of 83 hours/year supporting students.</li>
+            <li>Courses with the highest demand include College Algebra, Trigonometry, and Chemical Principles.</li>
+          </ul>
+      
+          <!-- Recommendations -->
+          <h2 class="key-findings">Recommendations</h2>
+          <ul class="findings-list">
+            <li>Hire a minimum of 20 STEM-focused tutors to meet annual demand.</li>
+            <li>Develop a consistent data collection system for student and tutor metrics.</li>
+            <li>Request increased funding from the administration to sustain tutoring services.</li>
+          </ul>
+      
+          <!-- Funding Support -->
+          <section id="funding">
+            <h2>Funding Support</h2>
+            <p>This research has been generously supported by the following organizations and initiatives:</p>
+            <ul>
+              <li>
+                <a href="https://wvresearch.org/programs/sure-grant-program" target="_blank">
+                  <span class="material-icons">link</span> WV Research SURE Grant Program
+                </a>
+              </li>
+              <li>
+                <a href="https://first2network.org/" target="_blank">
+                  <span class="material-icons">link</span> First2 Network
+                </a>
+              </li>
+              <li>
+                <a href="https://nsf.gov/" target="_blank">
+                  <span class="material-icons">link</span> National Science Foundation (NSF)
+                </a>
+              </li>
+            </ul>
+          </section>
+      
+          <!-- Acknowledgements -->
+          <p class="expected-impact">
+            Special thanks to <strong>Kristy Henson</strong> and <strong>Bri DiBacco</strong> for providing LEAD Center data.
+            This research was supported by the First2 Network NSF INCLUDES Alliance.
+          </p>
+          <a href="https://www.linkedin.com/in/kristy-henson-1803188a/" target="_blank" class="linkedin-link" rel="noopener noreferrer">
+            <span class="material-icons" aria-hidden="true">link</span> Connect with Dr. Kristy Henson
+          </a>
+          <a href="https://www.linkedin.com/in/bri-dibacco4studentsuccess/" target="_blank" class="linkedin-link" rel="noopener noreferrer">
+            <span class="material-icons" aria-hidden="true">link</span> Connect with Bri DiBacco
+          </a>
 
-  <footer>
-    <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
-    <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
-    <p><a href="research.html" target="_self">Back to Research</a></p>
-  </footer>
-  <script src="js/menu-toggle.js"></script>
-  <script src="js/download-manager.js"></script> 
-</body>
+          <p class="expected-impact">
+            <strong>Below</strong> is the full <strong>Research Powerpoint Presentation</strong> summarizing the findings from this study. You can view or download the PDF for detailed insights.
+          </p>
+          <div class="responsive-content">
+            <iframe src="images/PDSA.pdf" title="Project Poster"></iframe>
+            <a href="images/PDSA.pdf" class="download-link" data-confirm="Are you sure you want to download the project poster?" download>
+              Download PDF
+            </a>
+          </div>
+        </section>
+      </main>
+      
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
+        <p><a href="research.html" target="_self">Back to Research</a></p>
+    </footer>
+    <script src="js/download-manager.js" defer></script>
+    <script src="js/menu-toggle.js" defer></script>
+    </body> 
 </html>

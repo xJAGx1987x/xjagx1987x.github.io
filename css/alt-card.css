@@ -1,0 +1,86 @@
+.main-content {
+    max-width: 700px; /* Adjust to your preferred width */
+    width: 100%;
+    margin: 20px auto; /* Center the content */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.static-card {
+    background: var(--grey); /* Card background */
+    color: var(--text-color); /* Text color */
+    padding: 30px; /* Inner spacing */
+    margin: 20px 0; /* Spacing between cards */
+    border-radius: 10px; /* Rounded corners */
+    border-left: var(--accent-color) solid 3px;
+    border-right: var(--accent-color) solid 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: left; /* Default text alignment */
+}
+
+.static-card p {
+    margin: 1rem 0;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.static-card p strong {
+    color: var(--accent-color);
+}   
+
+.static-card a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.static-card a:hover {
+    color: #52e0c8; /* Slightly brighter hover effect */
+}
+
+/* Blockquote styling: Visually distinct */
+.static-card blockquote {
+    font-style: italic;
+    font-size: 0.95rem; /* Slightly larger text */
+    margin: 1rem 0 1.5rem; /* Balanced spacing */
+    padding: 1rem 2rem; /* Adjusted padding */
+    background: linear-gradient(to bottom,var(--background-color) ,var(--background-alt) ); /* Gradient background */
+    border-radius: 18px; /* Rounded corners */
+    color: var(--text-muted);
+    text-align: left; /* More natural alignment */
+    letter-spacing: 0.03em; /* Cleaner text appearance */
+    transition: all 0.3s ease;
+}
+
+.static-card blockquote:hover {
+    background: rgba(10, 10, 10, 0.7); /* Slight glow effect */
+    transform: scale(1.01); /* Subtle zoom */
+}
+
+/* Cite styling: Right-aligned author attribution */
+.static-card blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.8rem; /* Smaller attribution font */
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--text-muted); /* Separate citation */
+    text-align: right; /* Align author to the right */
+    color: rgba(100, 255, 218, 0.8); /* Transparent accent */
+}
+
+.static-card blockquote cite span{
+    display: block;
+    margin-bottom: 0.5rem; /* Adjust spacing between lines if needed */
+}
+
+::selection {
+    background-color: var(--accent-color); /* Vibrant cyan */
+    color: var(--background-color); /* Dark text */
+}
+
+::-moz-selection {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+

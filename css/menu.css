@@ -1,0 +1,67 @@
+/* Menu Section Styles */
+#menu {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--background-color); /* Adapt to theme */
+    text-align: center;
+}
+
+/* Menu Toggle Button */
+.menu-toggle-container {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+#menu-toggle {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: var(--background-alt) 0.3s ease, transform 0.2s ease;
+}
+
+#menu-toggle:hover {
+    background-color: var(--text-muted);
+    transform: scale(1.05);
+}
+
+/* Navigation Menu */
+#mobile-nav {
+    display: none; /* Hidden by default */
+    background-color: var(--background-alt);
+    border-top: 1px solid var(--text-muted);
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+#mobile-nav ul {
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#mobile-nav li {
+    margin: 0.5rem 0;
+}
+
+#mobile-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 1rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#mobile-nav a:hover {
+    color: var(--text-muted);
+    text-shadow: 0 0 5px var(--background-alt);
+}
+
+/* Visible Navigation when Active */
+#mobile-nav.visible {
+    display: block;
+}

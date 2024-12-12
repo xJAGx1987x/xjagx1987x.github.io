@@ -1,0 +1,104 @@
+.main-content {
+    max-width: 900px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center; 
+    position: relative; 
+    z-index: 2; 
+}
+
+/* General Layout for Connections Cards */
+.connections-cards {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between cards */
+    margin: 40px 0;
+    align-items: center; /* Center align cards */
+}
+
+.connections-cards .card {
+    width: 100%; /* Full width of the container */
+    max-width: 100%; /* Optional max width for larger screens */
+    background: var(--background-alt); /* Card background */
+    color: var(--text-color); /* Text color */
+    padding: 30px; /* Inner spacing */
+    border-radius: 10px; /* Rounded corners */
+    border-left: var(--accent-color) solid 3px;
+    border-right: var(--accent-color) solid 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Center align content inside the card */
+    transition: all 0.3s ease;
+    overflow: hidden; /* Prevent overflow issues */
+}
+
+/* Hover Effect for Card */
+.connections-cards .card:hover {
+    background: linear-gradient(to bottom, rgba(100, 255, 218, 0.15), rgba(0, 0, 0, 0.8)); /* Hover gradient */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Elevated hover shadow */
+    transform: translateY(-5px); /* Lift effect */
+}
+
+/* Styling for Links Inside Cards */
+.connections-cards .card a {
+    display: flex; /* Makes the link container flexible */
+    flex-direction: column; /* Stacks content vertically */
+    align-items: center; /* Center align content */
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from card */
+    width: 100%; /* Ensure the link spans the entire card */
+    height: 100%; /* Full height for clickable area */
+    transition: color 0.3s ease;
+}
+
+/* Hover Effect for Links */
+.connections-cards .card a:hover {
+    color: var(--accent-color, #52e0c8); /* Bright accent color on hover */
+}
+
+.projects-icon path {
+    fill: none; /* No fill inside shapes */
+    stroke: var(--accent-color, #52e0c8); /* Apply stroke color */
+    stroke-width: 2; /* Adjust stroke thickness as needed */
+    transition: stroke 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+
+.icon {
+    fill: var(--accent-color, #52e0c8); /* Default fill */
+    stroke: var(--accent-color, #52e0c8); /* Default stroke */
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+/* Hover Effect for SVG Icon */
+.connections-cards .card:hover .projects-icon {
+    stroke: #52e0c8; /* Highlight color */
+    transform: scale(1.1); /* Slightly enlarge the icon */
+}
+
+/* Text Styling */
+.connections-cards .card h3 {
+    font-size: 1.2rem; /* Heading size */
+    margin: 10px 0 5px; /* Adjust spacing */
+    color: var(--text-color, #333); /* Text color */
+}
+
+.connections-cards .card p {
+    font-size: 0.9rem; /* Paragraph size */
+    color: var(--text-color, #555); /* Text color */
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .connections-cards .card {
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .connections-cards .card h3 {
+        font-size: 1rem; /* Smaller heading size */
+    }
+
+    .connections-cards .card p {
+        font-size: 0.85rem; /* Adjust text size */
+    }
+}

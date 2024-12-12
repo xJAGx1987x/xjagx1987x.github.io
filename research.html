@@ -1,58 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Projects - Josh George</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshua George - Developer Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/project-cards.css">
+    <link rel="stylesheet" href="css/images.css"> 
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/menu.css"> 
 </head>
+
 <body>
-  <header>
-    <h1>My Research Projects</h1>
+  <header class="header">
+      <h1>Research Projects</h1>
   </header>
 
-  <main>
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <ul class="project-list">
-        <li>
-          <h3><a href="pmi.html">Automation of PMI Estimation</a></h3>
-          <p>Developing computational tools to automate post-mortem interval calculations for forensic investigations.</p>
-        </li>
-        <li>
-          <h3><a href="math_struggles.html">Mathematic Struggles Among STEM Students</a></h3>
-          <p>A study examining how socioeconomic status and family dynamics impact math success among STEM students.</p>
-        </li>
-        <li>
-          <h3><a href="lead-project.html">LEAD Center Research Support</a></h3>
-          <p>Investigating the need for additional STEM tutoring support based on LEAD Center data.</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="menu">
-      <div style="text-align: center; margin-top: 1.5rem;">
-        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-      </div>
+  <section id="menu">
+    <div class="menu-toggle-container">
+      <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+    </div>
   
-      <nav id="mobile-nav" class="hidden">
-        <span><a href="about.html">About Me</a></span>
-        <span><a href="research.html">Research</a></span>
-        <span>
-          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>Resume</a>
-        </span>      
-        <span><a href="connect.html">Connect</a></span>
-      </nav>
-    </section>
-  </main>
+    <nav id="mobile-nav" class="hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>  
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li>
+          <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>
+            Resume
+          </a>
+        </li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </section>
 
-  <footer>
+  <main class="main-content">
+    <section class="static-card">
+        <h2>Featured Projects</h2>
+            <div class="project-list">
+            <div class="static-card">
+                <h3><a href="pmi.html">Automation of PMI Estimation</a></h3>
+                <p>Developing computational tools to automate post-mortem interval calculations for forensic investigations.</p>
+            </div>
+            <div class="static-card">
+                <h3><a href="math-struggles.html">Mathematic Struggles Among STEM Students</a></h3>
+                <p>A study examining how socioeconomic status and family dynamics impact math success among STEM students.</p>
+            </div>
+            <div class="static-card">
+                <h3><a href="lead-project.html">LEAD Center Research Support</a></h3>
+                <p>Investigating the need for additional STEM tutoring support based on LEAD Center data.</p>
+            </div>
+            </div>
+    </section>
+</main>
+
+  <footer class="footer" class="footer">
     <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
+    <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
     <p><a href="index.html" target="_self">Back to Home</a></p>
   </footer>
-
-  <!-- JavaScript for Dropdown Menu -->
-  <script src="js/menu-toggle.js"></script>
-  <script src="js/download-manager.js"></script> 
+  
+  <script src="js/download-manager.js" defer></script>
+  <script src="js/menu-toggle.js" defer></script>
 </body>
 </html>
