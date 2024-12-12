@@ -1,3 +1,13 @@
+.main {
+    max-width: 100%;
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center; 
+    position: relative; 
+    z-index: 2; 
+}
+
 .research-section .research-body {
     background-color: rgb(32, 32, 32);
     background-image: 
@@ -170,30 +180,47 @@ main {
     font-size: 1.2rem; /* Adjust icon size */
 }
 
-
+/* Media queries for mobile devices */
 @media (max-width: 768px) {
-    .project-list {
-        flex-direction: column; /* Stack the cards vertically */
-        align-items: center; /* Center the cards */
+    .research-section {
+        padding: 1rem; /* Reduce padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size */
     }
 
-    .project-list .static-card {
-        flex: 1 1 100%; /* Make the cards take full width */
-        max-width: 100%; /* Ensure they expand to the container width */
-        margin: 10px 0; /* Add some spacing between stacked cards */
-    }
-}
-
-@media (max-width: 480px) {
-    .static-card {
-        padding: 20px; /* Reduce padding for small screens */
+    .research-section p,
+    .research-section ul {
+        font-size: 1rem; /* Adjust font size for paragraphs and lists */
     }
 
-    .static-card h3 {
-        font-size: 1rem; /* Slightly smaller text */
+    .research-section ul.findings-list {
+        margin-left: 1rem; /* Adjust margin for lists */
     }
 
-    .static-card p {
-        font-size: 0.9rem;
+    .research-section a.linkedin-link {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+
+    .research-section a.linkedin-link .material-icons {
+        font-size: 1rem; /* Adjust icon size */
+    }
+
+    #funding {
+        padding: 1rem; /* Reduce padding for funding section */
+    }
+
+    #funding h2 {
+        font-size: 1.2rem; /* Adjust heading size */
+    }
+
+    #funding p {
+        font-size: 0.9rem; /* Adjust font size for paragraphs */
+    }
+
+    #funding ul a {
+        font-size: 0.9rem; /* Adjust font size for links */
+    }
+
+    #funding ul a .material-icons {
+        font-size: 1rem; /* Adjust icon size */
     }
 }
