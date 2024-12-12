@@ -22,25 +22,24 @@
       </nav>
     </header>
 
-    <section id="menu">
-      <div class="menu-toggle-container">
-        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-      </div>
-    
-      <nav id="mobile-nav" class="hidden">
+    <button id="menu-toggle" aria-expanded="false">☰ Menu</button>
+    <nav id="mobile-nav">
         <ul>
-          <li><a href="index.html">Home</a></li>  
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="research.html">Research</a></li>
-          <li>
-            <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>
-              Resume
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li>
+            <a href="images/Joshua George.pdf"
+                class="download-link" 
+                data-file="images/Joshua George.pdf" 
+                data-confirm="Do you want to download this resume?">
+                Resume
             </a>
-          </li>
-          <li><a href="connect.html">Connect</a></li>
+            </li>
+            </li> 
+            <li><a href="connect.html">Connect</a></li>
         </ul>
-      </nav>
-    </section>
+    </nav>
 
       <main id="main">
         <section class="research-section">
@@ -104,7 +103,7 @@
           </p>
           <div class="responsive-content">
             <iframe src="images/PDSA.pdf" title="Project Poster"></iframe>
-            <a href="images/PDSA.pdf" class="download-link" data-confirm="Are you sure you want to download the project poster?" download>
+            <a href="images/PDSA.pdf" class="download-link" data-confirm="Are you sure you want to download the project poster?">
               Download PDF
             </a>
           </div>

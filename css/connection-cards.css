@@ -23,20 +23,26 @@
     background: var(--background-alt); /* Card background */
     color: var(--text-color); /* Text color */
     padding: 30px; /* Inner spacing */
-    border-radius: 10px; /* Rounded corners */
-    border-left: var(--accent-color) solid 3px;
-    border-right: var(--accent-color) solid 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    text-align: center; /* Center align content inside the card */
+    border-radius: 90px; /* Rounded corners */
+    border-left: var(--accent-color) solid 5px;
+    border-right: var(--accent-color) solid 5px;
+    border-top: var(--accent-color) solid 5px;
+    border-bottom: var(--accent-color) solid 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
     transition: all 0.3s ease;
-    overflow: hidden; /* Prevent overflow issues */
+    overflow: hidden; 
 }
 
 /* Hover Effect for Card */
 .connections-cards .card:hover {
-    background: linear-gradient(to bottom, rgba(100, 255, 218, 0.15), rgba(0, 0, 0, 0.8)); /* Hover gradient */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Elevated hover shadow */
-    transform: translateY(-5px); /* Lift effect */
+    background: linear-gradient(to bottom, rgba(100, 255, 218, 0.15), rgba(0, 0, 0, 0.8)); /* Slight hover effect */
+    box-shadow:        0 4px 10px rgba(0, 0, 0, 0.3), /* Subtle base shadow */
+    0 0 15px 5px rgba(100, 255, 218, 0.5); /* Soft outer glow */
+    transform: translateY(-5px); /* Subtle elevation */
+    h3 {
+        color: var(--accent-color);
+    }
 }
 
 /* Styling for Links Inside Cards */

@@ -22,24 +22,24 @@
       </nav>
     </header>
 
-    <section id="menu">
-        <div class="menu-toggle-container">
-          <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
-        </div>
-      
-        <nav id="mobile-nav" class="hidden">
-          <ul>
+    <button id="menu-toggle" aria-expanded="false">☰ Menu</button>
+    <nav id="mobile-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
             <li><a href="research.html">Research</a></li>
             <li>
-              <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>
+            <a href="images/Joshua George.pdf"
+                class="download-link" 
+                data-file="images/Joshua George.pdf" 
+                data-confirm="Do you want to download this resume?">
                 Resume
-              </a>
+            </a>
             </li>
+            </li> 
             <li><a href="connect.html">Connect</a></li>
-          </ul>
-        </nav>
-      </section>
+        </ul>
+    </nav>
 
     <main id="main">
       <section class="research-section">
@@ -66,10 +66,10 @@
         <p class="expected-impact"><strong>Below</strong> is the full research poster summarizing the findings from my study on the impact of socioeconomic status and family dynamics on STEM students' success at Fairmont State University. You can view or download the poster for detailed insights.</p>
         <div class="responsive-content">
             <iframe src="images/JG_WVASposter.pdf" title="Research Poster"></iframe>
-            <a href="     class="download-link" 
+            <a href="images\JG_WVASposter.pdf" class="download-link" 
             data-file="images/JG_WVASposter.pdf" 
             data-confirm="Do you want to download this resume?" 
-            download>Download the Poster</a>
+            >Download the Poster</a>
         </div>
 
         <ul class="findings-list">

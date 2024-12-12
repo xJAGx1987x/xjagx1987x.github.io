@@ -1,5 +1,5 @@
 .main-content {
-    max-width: 700px; /* Adjust to your preferred width */
+    max-width: 900px; /* Adjust to your preferred width */
     width: 100%;
     margin: 20px auto; /* Center the content */
     padding: 0 20px; /* Add padding for smaller screens */
@@ -8,17 +8,17 @@
 .static-card {
     background: var(--grey); /* Card background */
     color: var(--text-color); /* Text color */
-    padding: 15px; /* Inner spacing */
-    margin: 20px 0; /* Spacing between cards */
-    border-radius: 10px; /* Rounded corners */
-    border-left: var(--accent-color) solid 3px;
-    border-right: var(--accent-color) solid 3px;
+    padding: 35px; /* Inner spacing */
+    margin: 2.5rem; /* Spacing between cards */
+    border-radius: 90px ; 
+    border-left: var(--accent-color) solid 5px;
+    border-right: var(--accent-color) solid 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: left; /* Default text alignment */
 }
 
 .static-card p {
-    margin: 1rem 0;
+    margin: 1.0rem 0;
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -45,7 +45,7 @@
     margin: 1rem 0 1.5rem; /* Balanced spacing */
     padding: 1rem 2rem; /* Adjusted padding */
     background: linear-gradient(to bottom,var(--background-color) ,var(--background-alt) ); /* Gradient background */
-    border-radius: 18px; /* Rounded corners */
+    border-radius: 25px; /* Rounded corners */
     color: var(--text-muted);
     text-align: left; /* More natural alignment */
     letter-spacing: 0.03em; /* Cleaner text appearance */
@@ -53,8 +53,8 @@
 }
 
 .static-card blockquote:hover {
-    background: rgba(10, 10, 10, 0.7); /* Slight glow effect */
     transform: scale(1.01); /* Subtle zoom */
+    color: var(--text-color); /* Darker text on hover */
 }
 
 /* Cite styling: Right-aligned author attribution */

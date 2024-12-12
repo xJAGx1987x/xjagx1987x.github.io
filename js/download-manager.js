@@ -1,6 +1,6 @@
 class DownloadManager {
     constructor(selector) {
-        this.links = document.querySelectorAll(selector); // Select elements matching the selector
+        this.links = document.querySelectorAll(selector);
         this.init();
     }
 
@@ -11,12 +11,13 @@ class DownloadManager {
     }
 
     handleClick(event, link) {
-        event.preventDefault(); // Prevent default navigation
+        event.preventDefault(); // Prevent default navigation and download
+        console.log("Download link clicked:", link); // Debugging
 
-        const filePath = link.getAttribute("data-file") || link.href; // Get file path from data-file or fallback to href
+        const filePath = link.getAttribute("data-file") || link.href; // Get file path
         const confirmMessage = link.getAttribute("data-confirm") || "Do you want to download this file?";
 
-        const confirmDownload = confirm(confirmMessage); // Show confirmation dialog
+        const confirmDownload = confirm(confirmMessage);
 
         if (confirmDownload) {
             this.downloadFile(filePath);
@@ -24,14 +25,17 @@ class DownloadManager {
     }
 
     downloadFile(filePath) {
+        console.log("Downloading file:", filePath); // Debugging
         const downloadAnchor = document.createElement("a");
         downloadAnchor.href = filePath;
-        downloadAnchor.download = ""; // Use default file name
+        downloadAnchor.setAttribute("download", ""); // Set download dynamically
+        document.body.appendChild(downloadAnchor);
         downloadAnchor.click();
+        document.body.removeChild(downloadAnchor); // Clean up
     }
 }
 
-// Initialize the download manager
+// Initialize the DownloadManager after DOM is loaded
 document.addEventListener("DOMContentLoaded", () => {
-    new DownloadManager(".download-link"); // Pass the class or selector to manage downloads
+    new DownloadManager(".download-link");
 });

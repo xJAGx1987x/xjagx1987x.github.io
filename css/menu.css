@@ -1,69 +1,88 @@
-/* Menu Section Styles */
-#menu {
-    width: 100%;
-    padding: 1rem;
-    background-color: var(--background-color); /* Adapt to theme */
-    text-align: center;
-    max-width: 100%; /* Ensure responsiveness */
-    margin: 0 auto;
-}
-
-/* Menu Toggle Button */
-.menu-toggle-container {
-    text-align: center;
-    margin: 1.5rem 0;
-}
-
 #menu-toggle {
     background-color: var(--accent-color);
-    color: var(--background-color);
+    color: var(--background-alt);
     font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     padding: 0.5rem 1rem;
     cursor: pointer;
     transition: var(--background-alt) 0.3s ease, transform 0.2s ease;
+    border: 3px solid var(--background-alt);
+    text-align: center; /* Center content horizontally */
+    margin: 0 auto; /* Ensure it's properly aligned within the page */
+    width: 100%; 
+    max-width: 200px; /* Limit width to prevent overflow */
+    display: center ;
 }
 
 #menu-toggle:hover {
-    background-color: var(--text-muted);
+    background-color: var(--background-alt);
     transform: scale(1.05);
+    border: 3px solid var(--accent-color);
+    border-radius: 25px;
+    color: var(--accent-color);
 }
 
-/* Navigation Menu */
 #mobile-nav {
     display: none; /* Hidden by default */
-    background-color: var(--background-alt);
-    border-top: 1px solid var(--text-muted);
+    background-color: transparent;
     margin-top: 1rem;
-    padding: 1rem 0;
+    padding: 0;
 }
+
+#mobile-nav.visible {
+    display: block; /* Show the menu when the 'visible' class is added */
+}
+
 
 #mobile-nav ul {
     list-style: none; /* Remove bullets */
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    gap: 1.5rem; /* Add spacing between buttons */
 }
 
 #mobile-nav li {
-    margin: 0.5rem 0;
+    margin: 0; /* Remove default margins from list items */
 }
 
 #mobile-nav a {
+    display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    color: var(--accent-color);
     font-size: 1rem;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    padding: 0.75rem 2rem; /* Inner spacing for buttons */
+    color: var(--accent-color); /* Text color */
+    background-color: transparent; /* Transparent button background */
+    border: 3px solid var(--accent-color); /* Button border */
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 #mobile-nav a:hover {
-    color: var(--text-muted);
-    text-shadow: 0 0 5px var(--background-alt);
+    background-color: var(--accent-color); /* Flip background on hover */
+    color: var(--background-alt); /* Flip text color on hover */
+    transform: scale(1.05); /* Slight hover effect */
 }
 
-/* Visible Navigation when Active */
+
 #mobile-nav.visible {
     display: block;
 }
+
+@media (max-width: 768px) {
+    #mobile-nav {
+        margin-top: 1rem;
+        padding: 0;
+    }
+
+    #mobile-nav a {
+        width: auto; /* Allow buttons to size dynamically */
+        padding: 1rem; /* Add more padding for touch-friendly buttons */
+        font-size: 1.2rem; /* Slightly larger text for readability */
+    }
+}
+
