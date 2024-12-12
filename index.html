@@ -7,16 +7,36 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/project-cards.css"> <!-- Add this line -->
+    <link rel="stylesheet" href="css/project-cards.css"> 
+    <link rel="stylesheet" href="css/menu.css"> 
 </head>
 
 <body>
-  <header class="header">
-      <h1>Joshua George</h1>
-      <p id="current-date"></p>
-  </header>
+    <header class="header">
+        <h1>Joshua George</h1>
+        <p id="current-date"></p>
+    </header>
 
-  <main class="main-content">
+    <section id="menu">
+        <div class="menu-toggle-container">
+        <button id="menu-toggle" aria-label="Toggle navigation">☰ Menu</button>
+        </div>
+            <nav id="mobile-nav" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>  
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li>
+                <a href="images/Joshua George.pdf" class="download-link" data-confirm="Are you sure you want to download the resume?" download>
+                    Resume
+                </a>
+                </li>
+                <li><a href="connect.html">Connect</a></li>
+            </ul>
+            </nav>
+    </section>
+
+    <main class="main-content">
     <!-- Project List -->
     <div class="project-list">
         <!-- About -->
@@ -35,10 +55,10 @@
         <div class="static-card">
             <h3>
                 <a href="images/Joshua George.pdf" 
-                   class="download-link" 
-                   data-file="images/Joshua George.pdf" 
-                   data-confirm="Do you want to download this resume?" 
-                   download>
+                    class="download-link" 
+                    data-file="images/Joshua George.pdf" 
+                    data-confirm="Do you want to download this resume?" 
+                    download>
                     Resume
                 </a>
             </h3>
@@ -51,14 +71,15 @@
             <p>Get in touch via email or social media platforms.</p>
         </div>
     </div>
-</main>
+    </main>
 
 
-<footer id="footer" class="footer">
-  <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
-  <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
-</footer>
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 Joshua George. All Rights Reserved.</p>
+        <p>Email: <a href="mailto:xJAGx1987x@gmail.com">xJAGx1987x@gmail.com</a></p>
+    </footer>
   <script src="js/download-manager.js" defer></script>
+  <script src="js/menu-toggle.js" defer></script>   
   <script src="js/date.js" defer></script>
 </body>
 </html>
