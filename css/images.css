@@ -1,11 +1,20 @@
-/* Responsive container for images and PDFs */
-.responsive-content {
-    width: 100%; /* Ensure the content scales to the card's width */
-    max-width: 100%; /* Prevent the content from exceeding the card's size */
-    overflow: hidden; /* Hide any overflowing parts */
-    position: relative; /* Maintain relative positioning for internal elements */
-    text-align: center; /* Center-align the content */
+.responsive-content iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9; /* Maintain aspect ratio */
+    max-width: 100%;
+    border: none;
 }
+
+.responsive-content a.download-link {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
 
 /* Images: Make them responsive */
 .responsive-content img {

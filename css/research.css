@@ -1,12 +1,31 @@
-.main {
-    max-width: 100%;
+main {
+    margin: 20px auto;
+    padding: 10px; /* Adjust padding for smaller screens */
+    max-width: 100%; /* Remove fixed width for responsiveness */
     width: 100%;
-    margin: 40px auto;
-    padding: 0 20px;
-    text-align: center; 
-    position: relative; 
-    z-index: 2; 
+    background-color: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    line-height: 1.8;
+    overflow: hidden; /* Prevent content overflow */
 }
+
+.research-section {
+    padding: 1rem; /* Reduce padding for mobile */
+    max-width: 100%; /* Ensure responsiveness */
+    margin: 0 auto;
+    font-size: 1rem;
+    word-wrap: break-word; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    padding: 2rem ;
+    font-size: 1rem; 
+    background-color: var(--background-alt);
+}
+
 
 .research-section .research-body {
     background-color: rgb(32, 32, 32);
@@ -30,18 +49,6 @@
 
 }
 
-.research-section {
-    background-color: var(--background-alt);
-    padding: 2rem;
-    margin: 0 auto;
-    max-width: 800px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    font-family: var(--font-main);
-    line-height: 1.6;
-    padding: 2rem ;
-    font-size: 1rem;
-}
 
 .research-section p,
 .research-section ul {
