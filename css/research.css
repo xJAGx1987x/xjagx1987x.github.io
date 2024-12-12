@@ -1,10 +1,10 @@
 main {
-    margin: 20px auto;
+    margin: 1rem auto;
     padding: 15px; /* Adjusted to balance between the two conflicting rules */
-    max-width: 900px; /* Ensure responsiveness */
+    max-width: 100%; /* Ensure responsiveness */
     width: 100%;
     background-color: var(--accent-color); /* Background matches the theme */
-    border-radius: 90px; /* Consistent rounded corners */
+    border-radius: 25px; /* Consistent rounded corners */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
     font-size: 16px; /* Base font size for body text */
     line-height: 1.8; /* Ensures readability */
@@ -18,7 +18,7 @@ main {
     margin: 0 auto;
     font-size: 1rem;
     word-wrap: break-word; 
-    border-radius: 90px;
+    border-radius: 25px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     font-family: var(--font-main);
     line-height: 1.6;
