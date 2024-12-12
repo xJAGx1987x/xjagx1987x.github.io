@@ -37,7 +37,7 @@ header h1::after {
       var(--background-color) 60%,
       var(--background-color) 90%
   );
-  width: 50%;
+  width: 65%;
 }
 
 
