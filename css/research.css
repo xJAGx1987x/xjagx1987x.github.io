@@ -171,3 +171,29 @@ main {
 }
 
 
+@media (max-width: 768px) {
+    .project-list {
+        flex-direction: column; /* Stack the cards vertically */
+        align-items: center; /* Center the cards */
+    }
+
+    .project-list .static-card {
+        flex: 1 1 100%; /* Make the cards take full width */
+        max-width: 100%; /* Ensure they expand to the container width */
+        margin: 10px 0; /* Add some spacing between stacked cards */
+    }
+}
+
+@media (max-width: 480px) {
+    .static-card {
+        padding: 20px; /* Reduce padding for small screens */
+    }
+
+    .static-card h3 {
+        font-size: 1rem; /* Slightly smaller text */
+    }
+
+    .static-card p {
+        font-size: 0.9rem;
+    }
+}
