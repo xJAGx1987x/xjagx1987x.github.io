@@ -20,16 +20,13 @@
 
     /* Accent Colors */
     --accent-color: #64ffda; /* Vibrant cyan for primary highlights */
-    ---accent-color-2: #82ffe4;--accent-color-2: #82ffe4;
-    
+    --accent-color-2: #82ffe4;--accent-color-2: #82ffe4;
+    --egg-white: #f8f8f2; /* Off-white for text */  
+
     /* Text Colors */
     --text-color: #f8f8f2; /* Off-white for primary text */
     --text-muted: #a8a8a8; /* Muted grey for secondary/subtle text */
-
-    /* Additional Colors */
-    --success-color: #28a745; /* Vibrant green for success messages/icons */
-    --warning-color: #ffc107; /* Bright yellow for warnings */
-    --error-color: #dc3545; /* Bold red for errors */
+    --text-accent: #ff79c6; /* Pink accent for highlighted text */
     
     /* Fonts */
     --font-main: 'JetBrains Mono', monospace;

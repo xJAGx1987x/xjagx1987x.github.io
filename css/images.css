@@ -55,19 +55,21 @@
     height: auto; /* Maintains the aspect ratio */
     border-radius: 50%; /* Makes it circular */
     margin: 0 auto 1rem; /* Centers the image and adds spacing */
-    padding: 6px; /* Adds padding for breathing space */
-    background: linear-gradient(135deg, #1f1f1f, #2a2a2a, #1f1f1f); /* Adds a gradient background */
-    border: 2px solid transparent; /* Optional: Border accent */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4), 0 0 15px rgba(255, 255, 255, 0.05); /* Adds shadows */
+    background: linear-gradient(135deg, var(--light-grey), var(--grey), var(--mid-grey)); /* Gradient with lighter tones */
+    border: 2px solid transparent; /* Transparent border for accent effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6), 0 0 10px var(--accent-color-2); /* Subtle shadow with cyan accent */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    padding: 10px; /* Inner padding for content */
+    overflow: hidden; /* Ensures content fits inside the frame */
 }
 
 /* Hover effect */
 .profile-img:hover {
-    transform: scale(1.05); /* Subtle zoom on hover */
-    background: linear-gradient(135deg, #2a2a2a, #3a3a3a, #2a2a2a); /* Brighter gradient */
-    box-shadow: 0 0 20px var(--accent-color, #64ffda), 0 0 30px rgba(100, 255, 218, 0.6); /* Glow effect */
+    background: linear-gradient(135deg, var(--accent-color), var(--accent-color-2), var(--light-grey)); /* Vibrant gradient on hover */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.8), 0 0 15px var(--accent-color); /* Glow with primary accent */
+    transform: scale(1.05); /* Subtle zoom effect */
 }
+
 
 .profile-img-container {
     width: 100%; /* Full width of the container */
