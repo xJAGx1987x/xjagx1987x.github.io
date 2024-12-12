@@ -1,33 +1,28 @@
 header {
-  background: radial-gradient(
-      ellipse at center, /* Horizontal oval shape centered */
-      var(--accent-color) 20%, 
-      var(--background-color) 70%, 
-      var(--background-alt) 100%
-  );
   text-align: center;
-  padding: 3rem 1rem;
-  color: var(--background-alt);
-  font-weight: bold;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  padding: 2rem;
+  width: 100vw; /* Ensure the header spans the full width of the viewport */
+  background: radial-gradient(circle, rgba(63, 191, 191, 1) 0%, rgba(8, 8, 8, 1) 70%);
+  color: #fff;
+  border-bottom: 5px solid var(--accent-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  overflow: hidden;
-  width: 100%;
 }
 
-  
-  header h1, h2, h3 {
-    font-size: 3.0rem;
-    font-family: 'Jetbrains Mono', monospace;
-    margin: 0;
-    position: relative;
-    z-index: 1;
-    animation: headerFadeIn 1.2s ease-out; /* Subtle fade-in for the header */
-    
-  }
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-top: 0.5rem;
+}
+
+
 
   header h1::after {
     content: "";
@@ -46,14 +41,6 @@ header {
     );
 }
 
-  
-  header p {
-    font-size: 1.5rem;
-    margin: 1rem 0 0;
-    z-index: 1;
-    animation: headerFadeIn 1.2s ease-out;
-    text-align: center;
-  }
 
   .header p::before {
     content: '';
