@@ -6,7 +6,7 @@ header {
   color: #fff;
   border-bottom: 5px solid var(--accent-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  position: relative;
+  position: static;
 }
 
 header h1 {
