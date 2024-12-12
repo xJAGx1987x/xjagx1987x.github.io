@@ -13,8 +13,8 @@
     background-color: var(--accent-color);
     color: var(--background-alt);
     font-size: 1.2rem;
-    border: none;
     border-radius: 14px;
+    border: 10px double var(--background-alt);
     padding: 0.5rem 1rem; /* Interior padding (spacing inside the button) */
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
