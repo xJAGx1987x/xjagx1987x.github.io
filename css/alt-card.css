@@ -22,23 +22,13 @@ main,
 }
 
 .static-card {
-    background: var(--background-alt); /* Subtle background for cards */
+    background: var(--grey); /* Subtle background for cards */
     color: var(--text-color); /* Ensure text is readable */
     border-left: 5px solid var(--accent-color); /* Retain left border accent */
     border-right: 5px solid var(--accent-color); /* Retain right border accent */
     font-size: 1rem; /* Slightly smaller font for compact cards */
     line-height: 1.6; /* Adjust for compact spacing */
 }
-
-main {
-    background-color: var(--accent-color); /* Bright background to match the theme */
-}
-
-.research-section {
-    background-color: var(--background-alt); /* Subtle background for sections */
-    padding: 1rem; /* Reduce padding for better mobile responsiveness */
-}
-
 
 .static-card p {
     margin: 1.0rem 0;
