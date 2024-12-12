@@ -11,7 +11,7 @@
     text-align: center; /* Center content horizontally */
     margin: 0 auto; /* Ensure it's properly aligned within the page */
     width: 100%; 
-    max-width: 200px; /* Limit width to prevent overflow */
+    max-width: 100%; /* Limit width to prevent overflow */
     display: center ;
 }
 
@@ -34,6 +34,10 @@
     display: block; /* Show the menu when the 'visible' class is added */
 }
 
+#mobile-nav li {
+    margin: 0; 
+}
+
 
 #mobile-nav ul {
     list-style: none; /* Remove bullets */
@@ -41,16 +45,12 @@
     padding: 0;
     display: flex;
     flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center horizontally */
-    gap: 1.5rem; /* Add spacing between buttons */
-}
-
-#mobile-nav li {
-    margin: 0; /* Remove default margins from list items */
+    width: 100%; /* Make the list take up the full width of its container */
+    gap: 1.0rem; /* Add spacing between buttons */
 }
 
 #mobile-nav a {
-    display: inline-block;
+    display: block; /* Ensure the anchor takes up its container's width */
     text-decoration: none;
     font-weight: bold;
     font-size: 1rem;
@@ -60,6 +60,9 @@
     border: 3px solid var(--accent-color); /* Button border */
     border-radius: 25px; /* Rounded corners */
     transition: background-color 0.3s ease, transform 0.2s ease, color 0.3s ease;
+    width: 100%; /* Make the button span the full width of the parent container */
+    text-align: center; /* Ensure text is centered */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 #mobile-nav a:hover {
@@ -68,21 +71,16 @@
     transform: scale(1.05); /* Slight hover effect */
 }
 
-
-#mobile-nav.visible {
-    display: block;
-}
-
 @media (max-width: 768px) {
-    #mobile-nav {
-        margin-top: 1rem;
-        padding: 0;
+    #mobile-nav ul {
+        width: 100%; /* Ensure the ul container takes up the full width */
     }
 
     #mobile-nav a {
-        width: auto; /* Allow buttons to size dynamically */
-        padding: 1rem; /* Add more padding for touch-friendly buttons */
+        width: 100%; /* Ensure buttons stretch across the screen */
         font-size: 1.2rem; /* Slightly larger text for readability */
+        padding: 1rem; /* Add more padding for touch-friendly buttons */
     }
 }
+
 

@@ -4,7 +4,8 @@ main,
 .research-section {
     margin: 1rem auto; /* Center alignment with consistent spacing */
     padding: 15px; /* Equal padding for all sections */
-    max-width: 100%; /* Ensure responsiveness */
+    max-width: 900px; /* Ensure responsiveness */
+    width: 100%; /* Full width for containers */
     width: 100%; /* Full width for containers */
     border-radius: 25px; /* Consistent rounded corners */
     font-size: 16px; /* Uniform base font size for readability */
