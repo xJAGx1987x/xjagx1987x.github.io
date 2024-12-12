@@ -68,3 +68,14 @@ body {
         background-position: 0% 50%;
     }
 }
+
+::selection {
+    background-color: var(--accent-color); /* Highlight background */
+    color: var(--background-alt); /* Highlighted text color */
+}
+
+::-moz-selection {
+    background-color: var(--accent-color); /* Highlight background for Firefox */
+    color: var(--background-alt); /* Highlighted text color for Firefox */
+}
+

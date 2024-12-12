@@ -8,7 +8,7 @@
 .static-card {
     background: var(--grey); /* Card background */
     color: var(--text-color); /* Text color */
-    padding: 30px; /* Inner spacing */
+    padding: 15px; /* Inner spacing */
     margin: 20px 0; /* Spacing between cards */
     border-radius: 10px; /* Rounded corners */
     border-left: var(--accent-color) solid 3px;

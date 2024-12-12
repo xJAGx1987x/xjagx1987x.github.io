@@ -51,10 +51,11 @@
 
 /* Profile Image Styling */
 .profile-img {
+    margin: 2rem auto 1rem; /* Center the image and add spacing */
     display: block;
-    max-width: 150px; /* Restricts image size */
+    max-width: 250px; /* Restricts image size */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 60%; /* Makes the image circular */
     margin: 0 auto 1rem; /* Centers image and adds spacing */
     border: 4px solid #64ffda; /* Adds accent border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
