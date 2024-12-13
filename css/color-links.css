@@ -1,18 +1,38 @@
 .bri-link {
-    color: hotpink; 
     text-decoration: none;
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text; /* Clips gradient to text for WebKit browsers */
+    background-clip: text; /* Standard property for other browsers */
+    -webkit-text-fill-color: transparent; /* Makes text transparent to show gradient */
+    animation: rainbow 3s linear infinite; /* Infinite rainbow animation */
 }
-
+  
 .bri-link i {
-    margin-left: 0rem; 
+    margin-left: 0rem;
     align-items: middle;
-    color: inherit; 
+    color: inherit; /* Inherits rainbow gradient from parent */
     font-size: 1.0rem;
     transition: transform 0.3s ease, color 0.3s ease;
-    vertical-align: middle; 
-    position: relative; 
-    top: 0.2rem; 
+    vertical-align: middle;
+    position: relative;
+    top: 0.2rem;
 }
+
+@keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+}
+
+.kristy-link {
+    color: #BB86FC; 
+    text-decoration: none; 
+}
+  
 
 .kristy-link {
     color: #BB86FC ; 
