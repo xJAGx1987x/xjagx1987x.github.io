@@ -7,7 +7,6 @@
     color: #fff;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    
 }
 
 .acknowledgements-section h2 {
@@ -19,8 +18,9 @@
 
 .acknowledgements-section p {
     font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #fff;
+    margin-bottom: 0.5rem;
+
+    color: var(--text-muted);
 }
 
 .acknowledgements-section ul {
@@ -32,41 +32,39 @@
 
 .acknowledgements-section ul li {
     margin-bottom: 0.8rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 .acknowledgements-section ul li a {
-    color: var(--accent-color);
+
     text-decoration: none;
     font-weight: bold;
     display: inline-flex;
+    padding: 0.5rem 1rem;
     align-items: center;
     transition: color 0.3s ease;
+} 
+
+.acknowledgements-section ul li a i {
+    margin-left: 1rem; /* Space between the icon and the text */
+    margin-bottom: 0.3rem; 
+    text-align: center;
 }
 
 .acknowledgements-section ul li a:hover {
-    color: var(--text-muted);
+    color: var(--accent-color);
     transform: scale(1.2);
 }
 
 .acknowledgements-section ul li a .link-icon {
-    margin-left: 0.5rem;
-    color: var(--accent-color);
-    font-size: 1rem;
-    transform: scale(1);
-    transition: transform 0.3s ease;
-}
-
-.acknowledgements-section ul li a:hover .link-icon {
-    color: var(--text-muted);
-    transform: scale(1.2);
-}
-
-.link-icon {
     margin-left: 0.5rem; /* Space between the text and the icon */
-    font-size: 1rem; /* Adjust the size */
-    color: var(--accent-color); /* Icon color */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+    align-items: top;
+    color: var(--accent-color); 
+    font-size: 1.0rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    vertical-align: middle; /* Align the icon better with the text */
+    position: relative; /* Use relative positioning for fine-tuning */
+    top: 0.2rem; /* Adjust this value to move the icon down */
 }
 
 
@@ -78,3 +76,21 @@
     }
 }
 
+.pink-link {
+    color: hotpink;
+}
+
+/* Ensure the icons inherit the same pink color */
+.pink-link i {
+    color: hotpink;
+}
+
+/* Add hover styles for links */
+.pink-link:hover {
+    color: #fff;
+}
+
+/* Add hover styles for icons */
+.pink-link i:hover {
+    color: #fff;
+}
