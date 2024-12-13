@@ -52,7 +52,7 @@
 }
 
 .acknowledgements-section ul li a:hover {
-    color: var(--accent-color);
+    -webkit-text-fill-color: var(--accent-color);
     transform: scale(1.2);
 }
 
@@ -74,23 +74,4 @@
         margin: 0 auto 1rem; /* Center the margin on mobile */
         font-size: 1.5rem; /* Adjust font size for smaller screens */
     }
-}
-
-.pink-link {
-    color: hotpink;
-}
-
-/* Ensure the icons inherit the same pink color */
-.pink-link i {
-    color: hotpink;
-}
-
-/* Add hover styles for links */
-.pink-link:hover {
-    color: #fff;
-}
-
-/* Add hover styles for icons */
-.pink-link i:hover {
-    color: #fff;
 }

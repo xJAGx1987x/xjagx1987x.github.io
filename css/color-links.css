@@ -12,17 +12,11 @@
     align-items: middle;
     color: inherit; /* Inherits rainbow gradient from parent */
     font-size: 1.0rem;
-    transition: transform 0.3s ease, color 0.3s ease;
     vertical-align: middle;
     position: relative;
     top: 0.2rem;
 }
 
-
-.bri-link:hover {
-    animation-play-state: paused; /* Pauses animation on hover */
-    -webkit-text-fill-color: var(--accent-color); /* Changes text color on hover */
-}
 
 .kristy-link {
     color: #BB86FC; 
@@ -40,7 +34,6 @@
     align-items: middle;
     color: inherit; 
     font-size: 1.0rem;
-    transition: transform 0.3s ease, color 0.3s ease;
     vertical-align: middle; 
     position: relative; 
     top: 0.2rem; 
