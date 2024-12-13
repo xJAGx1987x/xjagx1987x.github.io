@@ -3,7 +3,7 @@
     bottom: 10px; /* Adjusts distance from the bottom */
     right: 10px; /* Adjusts distance from the right */
     font-size: 12px; /* Adjusts text size */
-    color: rgba(0, 0, 0, 0.5); /* Light gray color with transparency */
+    color: rgba(193, 193, 193, 0.5); /* Light gray color with transparency */
     font-family: Arial, sans-serif; /* Sets font style */
     z-index: 1000; /* Ensures it appears above other content */
     pointer-events: none; /* Prevents user interaction (e.g., clicks) */
