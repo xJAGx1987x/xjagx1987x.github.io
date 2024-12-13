@@ -28,6 +28,11 @@
     }
 }
 
+.bri-link:hover {
+    animation-play-state: paused; /* Pauses animation on hover */
+    -webkit-text-fill-color: var(--accent-color); /* Changes text color on hover */
+}
+
 .kristy-link {
     color: #BB86FC; 
     text-decoration: none; 
