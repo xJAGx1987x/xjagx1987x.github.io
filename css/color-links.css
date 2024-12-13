@@ -18,16 +18,12 @@
     top: 0.2rem;
 }
 
+ /* #BB86FC - lilac */ 
 
 .kristy-link {
-    color: #BB86FC; 
+    color: #BB86FC; ; 
     text-decoration: none; 
-}
-  
-
-.kristy-link {
-    color: #BB86FC ; 
-    text-decoration: none; 
+    font-weight: bold;
 }
 
 .kristy-link i {
@@ -43,7 +39,7 @@
 .chad-link {
     color: #860034; 
     text-decoration: none;
-
+    font-weight: bold;
 }
 
 .chad-link i {

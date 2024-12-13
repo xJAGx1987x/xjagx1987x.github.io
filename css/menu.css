@@ -1,8 +1,11 @@
 /* Wrapper Styling */
 #menu-wrapper {
-    padding: 0.25rem; /* Add padding inside the wrapper for spacing */
-    margin: 1rem auto; /* Center the wrapper and add vertical spacing */
+    padding-top: 10px ; 
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0.25rem 0.25rem; /* Center the wrapper and add vertical spacing */
     max-width: 900px; /* Limit the total width of the wrapper */
+    width: 100%; 
     box-sizing: border-box; /* Include padding in total dimensions */
     text-align: center; /* Center contents horizontally */
 }
@@ -21,7 +24,6 @@
     border: 10px double var(--background-alt);
     text-align: center; /* Center text horizontally */
     width: 100%; 
-    max-width: 880px; /* Limit width to prevent overflow */
     display: block; /* Ensure it aligns properly within its container */
     box-sizing: border-box; /* Include padding and borders in the total width */
     overflow: hidden; /* Prevent overflow from breaking layout */
@@ -41,9 +43,9 @@
 #mobile-nav {
     display: none; /* Hidden by default */
     background-color: transparent;
-    padding: 1rem; /* Add interior padding for spacing */
+    padding: 0.5rem; /* Add interior padding for spacing */
+    max-width: 900px; /* Limit the width of the menu */ 
     width: 100%; /* Ensure it spans the full width of the parent container */
-    max-width: 900px; /* Match the max width of the wrapper */
     box-sizing: border-box; /* Include padding and borders in width calculation */
     overflow: hidden; /* Prevent overflow */
     vertical-align: middle; /* Align to the top of the parent container */
@@ -58,8 +60,8 @@
     margin: 0; 
     width: 100%; /* Ensure the list items span the full width */
     overflow: hidden; /* Hide any overflowing content */
-    padding: 0.5rem;
-    
+    padding-left: 2rem;
+    padding-right: 2rem; 
 }
 
 /* List Container Styling */
@@ -68,11 +70,8 @@
     margin: 0;
     padding: 0;
     display: flex;
-    
     flex-direction: column; /* Stack items vertically */
     width: 100%;
-    max-width: 900px; /* Limit width to prevent overflow */
-    gap: 0.25rem 0; /* Add spacing between buttons */
 }
 
 /* Navigation Links Styling */
