@@ -41,7 +41,7 @@ body {
     background-size: 100% 100%, 10px 10px, 10px 10px, 100% 100%; /* Ensures seamless tiling */
     background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px; /* Fine-tune alignment */
     background-attachment: fixed; /* Keeps the background static */
-    color: var(--accent-color);
+    color: var(--text-muted);
     font-family: var(--font-main);
     line-height: 1.6;
     display: flex;
@@ -145,6 +145,3 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
-
-

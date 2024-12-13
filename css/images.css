@@ -124,6 +124,7 @@
 
     .responsive-content a {
         font-size: 0.8rem; /* Make links smaller */
+        text-align: center; 
     }
 
     .profile-img-container {
