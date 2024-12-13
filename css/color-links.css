@@ -1,34 +1,18 @@
-.bri-link {
+#bri-link {
     text-decoration: none;
-    color: transparent ;
+    color: transparent;
     font-weight: bold;
-    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-    -webkit-background-clip: text; /* Clips gradient to text for WebKit browsers */
-    background-clip: text; /* Standard property for other browsers */
-    -webkit-text-fill-color: transparent; /* Makes text transparent to show gradient */
+    background: linear-gradient(120deg, violet 12%, indigo 24%, blue 36%, green 48%, yellow 60%, orange 72%, red 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.1), 
+                 0 0 6px rgba(255, 255, 255, 0.09);
 }
-  
-.bri-link i {
-    margin-left: 0rem;
-    align-items: middle;
-    color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
-    font-size: 1.0rem;
+
+#bri-link i{
+    margin-left: 1rem; 
     vertical-align: middle;
-    position: relative;
-    top: 0.2rem;
-}
-
- /* #BB86FC - lilac */ 
-
-.kristy-link {
-    color: #BB86FC; ; 
-    text-decoration: none; 
-    font-weight: bold;
-}
-
-.kristy-link i {
-    margin-left: 0.5rem; 
-    align-items: middle;
     color: inherit; 
     font-size: 1.0rem;
     vertical-align: middle; 
@@ -36,20 +20,69 @@
     top: 0.2rem; 
 }
 
-.chad-link {
-    color: #860034; 
-    text-decoration: none;
-    font-weight: bold;
+#bri-link:hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+    background: linear-gradient(120deg, violet 12%, indigo 24%, blue 36%, green 48%, yellow 60%, orange 72%, red 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 
+                 0 0 8px rgba(255, 255, 255, 0.2);
 }
 
-.chad-link i {
-    margin-left: 0rem; 
+
+ /* #BB86FC - lilac */ 
+
+#kristy-link {
+    color: #BB86FC;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(187, 134, 252, 0.4),
+                    0 0 6px rgba(187, 134, 252, 0.3);
+}
+
+#kristy-link:hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: scale(1.1);
+    text-shadow: 0 0 4px rgba(187, 134, 252, 0.5),
+                 0 0 8px rgba(187, 134, 252, 0.4);
+}
+
+#kristy-link i {
+    margin-left: 1rem;
     align-items: middle;
-    color: inherit ; 
+    color: inherit;
+    font-size: 1.0rem;
+    vertical-align: middle;
+    position: relative;
+    top: 0.2rem;
+}
+
+#chad-link {
+    color: #860034;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 3px rgba(134, 0, 52, 0.4),
+                 0 0 6px rgba(134, 0, 52, 0.3);
+}
+
+#chad-link:hover {
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: scale(1.1);
+    text-shadow: 0 0 4px rgba(134, 0, 52, 0.5),
+                 0 0 8px rgba(134, 0, 52, 0.4);
+}
+
+#chad-link i {
+    margin-left: 1rem;
+    align-items: middle;
+    color: inherit;
     font-size: 1.0rem;
     transition: transform 0.3s ease, color 0.3s ease;
-    vertical-align: middle; 
+    vertical-align: middle;
     position: relative;
-    top: 0.2rem; 
+    top: 0.2rem;
 }
+
 

@@ -14,8 +14,8 @@
     display: flex;
     flex-wrap: wrap; /* Allow wrapping for smaller screens */
     justify-content: center; /* Center-align cards horizontally */
-    gap: 20px; /* Space between cards */
-    margin: 20px 0;
+    gap: 10px; /* Space between cards */
+    margin: 10px 0;
 }
 
 .project-list .static-card {

@@ -51,21 +51,8 @@
     text-align: center;
 }
 
-.acknowledgements-section ul li a:hover {
-    -webkit-text-fill-color: var(--accent-color);
-    transform: scale(1.2);
-}
 
-.acknowledgements-section ul li a .link-icon {
-    margin-left: 0.5rem; /* Space between the text and the icon */
-    align-items: top;
-    color: var(--accent-color); 
-    font-size: 1.0rem;
-    transition: transform 0.3s ease, color 0.3s ease;
-    vertical-align: middle; /* Align the icon better with the text */
-    position: relative; /* Use relative positioning for fine-tuning */
-    top: 0.2rem; /* Adjust this value to move the icon down */
-}
+
 
 
 @media (max-width: 768px) {
