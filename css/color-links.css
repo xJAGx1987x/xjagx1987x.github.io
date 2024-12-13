@@ -1,5 +1,6 @@
 .bri-link {
     text-decoration: none;
+    color: transparent ;
     font-weight: bold;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
     -webkit-background-clip: text; /* Clips gradient to text for WebKit browsers */
@@ -10,7 +11,7 @@
 .bri-link i {
     margin-left: 0rem;
     align-items: middle;
-    color: inherit; /* Inherits rainbow gradient from parent */
+    color: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
     font-size: 1.0rem;
     vertical-align: middle;
     position: relative;
@@ -55,3 +56,4 @@
     position: relative;
     top: 0.2rem; 
 }
+
