@@ -1,4 +1,10 @@
+#bri-link, #kristy-link, #chad-link {
+    font-family: var(--jb-mono) ; 
+}
+
 #bri-link {
+    vertical-align: middle;
+    text-align: center;
     text-decoration: none;
     color: transparent;
     font-weight: bold;
@@ -49,8 +55,11 @@
  /* #BB86FC - lilac */ 
 
 #kristy-link {
+    background: transparent;
     color: #BB86FC;
     text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
     font-weight: bold;
     text-shadow: 0 0 3px rgba(187, 134, 252, 0.4),
                     0 0 6px rgba(187, 134, 252, 0.3);
@@ -74,7 +83,10 @@
     top: 0.2rem;
 }
 
-#chad-link {
+#chad-link { 
+    background: transparent;
+    vertical-align: middle;
+    text-align: center;
     color: #860034;
     text-decoration: none;
     font-weight: bold;
