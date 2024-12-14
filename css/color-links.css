@@ -27,10 +27,24 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.1);
-    text-shadow: 0 0 4px rgba(255, 255, 255, 0.3), 
-                 0 0 8px rgba(255, 255, 255, 0.2);
+    position: relative;
 }
 
+#bri-link:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    transform: translate(-50%, -50%) scale(1.2); /* Slightly enlarges the glow */
+    background: linear-gradient(120deg, violet 12%, indigo 24%, blue 36%, green 48%, yellow 60%, orange 72%, red 90%);
+    filter: blur(8px); /* Increases the softness of the glow */
+    z-index: -1;
+    border-radius: 50%; /* Makes the glow circular, avoiding boxiness */
+    opacity: 0.6; /* Reduces the intensity for a subtle effect */
+    pointer-events: none; /* Prevents the glow from interfering with interactions */
+}
 
  /* #BB86FC - lilac */ 
 
@@ -45,8 +59,9 @@
 #kristy-link:hover {
     transition: transform 0.3s ease, color 0.3s ease;
     transform: scale(1.1);
-    text-shadow: 0 0 4px rgba(187, 134, 252, 0.5),
-                 0 0 8px rgba(187, 134, 252, 0.4);
+    text-shadow: 0 0 6px rgba(187, 134, 252, 0.5),
+                 0 0 12px #BB86FC,
+                 0 0 18px #BB86FC;
 }
 
 #kristy-link i {
@@ -70,8 +85,9 @@
 #chad-link:hover {
     transition: transform 0.3s ease, color 0.3s ease;
     transform: scale(1.1);
-    text-shadow: 0 0 4px rgba(134, 0, 52, 0.5),
-                 0 0 8px rgba(134, 0, 52, 0.4);
+    text-shadow: 0 0 6px rgba(134, 0, 52, 0.5),
+                 0 0 12px #860034,
+                 0 0 18px #860034;
 }
 
 #chad-link i {
