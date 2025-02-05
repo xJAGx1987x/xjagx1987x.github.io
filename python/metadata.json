@@ -1,0 +1,695 @@
+[
+  {
+    "tag": "📚Book",
+    "title": "American Demon",
+    "subtitle": "Eliot Ness and the Hunt for America's Jack the Ripper",
+    "author": [
+      "Daniel Stashower"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Minotaur Books",
+    "publish": "2022-09-06",
+    "total": 219,
+    "isbn-10": 1466837314,
+    "isbn-13": 9781466837317,
+    "cover": "http://books.google.com/books/content?id=ZnpVEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T12:11:49",
+    "Last-Updated": "2025-01-03T13:14:53",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\American Demon.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Assistant to the Villain",
+    "subtitle": "",
+    "author": [
+      "Hannah Nicole Maehrer"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Entangled Red Tower Books",
+    "publish": "2023-08-29",
+    "total": 421,
+    "isbn-10": 1649375522,
+    "isbn-13": 9781649375520,
+    "cover": "http://books.google.com/books/content?id=ofmzEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-11-30T21:08:21",
+    "Last-Updated": "2025-01-03T10:00:35",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Assistant to the Villain.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Brave New World",
+    "subtitle": "",
+    "author": [
+      "Aldous Huxley"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Rosetta Books",
+    "publish": "2011-07-01",
+    "total": 246,
+    "isbn-10": 795311257,
+    "isbn-13": 9780795311253,
+    "cover": "http://books.google.com/books/content?id=TIJ5EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-30T14:39:23",
+    "Last-Updated": "2025-01-03T10:00:42",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Brave New World.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Death in the City of Light",
+    "subtitle": "The Serial Killer of Nazi-occupied Paris",
+    "author": [
+      "David King"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Crown Publishing Group (NY)",
+    "publish": "2011-09-20",
+    "total": 434,
+    "isbn-10": 307452891,
+    "isbn-13": 9780307452894,
+    "cover": "http://books.google.com/books/content?id=dBMC4IEEHiMC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-30T14:40:06",
+    "Last-Updated": "2025-01-03T10:00:49",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Death In the City of Light.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Down the Hill",
+    "subtitle": "My Descent Into the Double Murder at Delphi",
+    "author": [
+      "Susan Hendricks"
+    ],
+    "category": [
+      "History"
+    ],
+    "publisher": "Grand Central Publishing",
+    "publish": "2023-09-19",
+    "total": 298,
+    "isbn-10": 306830248,
+    "isbn-13": 9780306830242,
+    "cover": "http://books.google.com/books/content?id=baqizwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-30T14:43:07",
+    "Last-Updated": "2025-01-07T05:33:54",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Down the Hill.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "Fiend",
+    "subtitle": "A Novel",
+    "author": [
+      "Peter Stenson"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Crown",
+    "publish": "2014-04-08",
+    "total": 306,
+    "isbn-10": 770436331,
+    "isbn-13": 9780770436339,
+    "cover": "http://books.google.com/books/content?id=svWKDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T21:34:12",
+    "Last-Updated": "2025-01-03T10:01:03",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Fiend.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Furious Hours",
+    "subtitle": "Murder, Fraud, and the Last Trial of Harper Lee",
+    "author": [
+      "Casey N. Cep"
+    ],
+    "category": [
+      "Biography & Autobiography"
+    ],
+    "publisher": "Knopf",
+    "publish": "2019-05-07",
+    "total": 348,
+    "isbn-10": 1101947861,
+    "isbn-13": 9781101947869,
+    "cover": "http://books.google.com/books/content?id=B7iWDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T20:46:43",
+    "Last-Updated": "2025-01-03T10:01:09",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Furious Hours.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "subtitle": "",
+    "author": [
+      "J.K. Rowling"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Pottermore Publishing",
+    "publish": "2015-12-08",
+    "total": 311,
+    "isbn-10": 1781100489,
+    "isbn-13": 9781781100486,
+    "cover": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-31T15:03:09",
+    "Last-Updated": "2025-01-15T17:49:49",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Harry Potter and the Sorcerer's Stone.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Haunted",
+    "subtitle": "A Novel",
+    "author": [
+      "Chuck Palahniuk"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Anchor",
+    "publish": "2005-05-03",
+    "total": 428,
+    "isbn-10": 385515839,
+    "isbn-13": 9780385515832,
+    "cover": "http://books.google.com/books/content?id=89uQ5xufarYC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-30T12:21:01",
+    "Last-Updated": "2025-01-03T12:44:13",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Haunted.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "Hell's Half-Acre",
+    "subtitle": "The Untold Story of the Benders, a Serial Killer Family on the American Frontier",
+    "author": [
+      "Susan Jonusas"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Penguin",
+    "publish": "2023-03-07",
+    "total": 369,
+    "isbn-10": 1984879855,
+    "isbn-13": 9781984879851,
+    "cover": "http://books.google.com/books/content?id=BYqeEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T11:50:18",
+    "Last-Updated": "2025-01-03T10:01:38",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Hell's Half-Acre.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "I'll Be Gone in the Dark",
+    "subtitle": "One Woman's Obsessive Search for the Golden State Killer",
+    "author": [
+      "Michelle McNamara"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "HarperCollins",
+    "publish": "2019-02-26",
+    "total": 425,
+    "isbn-10": 62916319,
+    "isbn-13": 9780062916310,
+    "cover": "http://books.google.com/books/content?id=R7NuDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-12-30T14:54:27",
+    "Last-Updated": "2025-01-03T10:01:45",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\I'll Be Gone in the Dark.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "In Cold Blood",
+    "subtitle": "",
+    "author": [
+      "Truman Capote"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Modern Library",
+    "publish": "2013-02-19",
+    "total": 417,
+    "isbn-10": 812994388,
+    "isbn-13": 9780812994384,
+    "cover": "http://books.google.com/books/content?id=TH5uM_f0MRwC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-12-27T05:31:48",
+    "Last-Updated": "2025-01-03T10:01:53",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\In Cold Blood.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Lost Girls",
+    "subtitle": "An Unsolved American Mystery",
+    "author": [
+      "Robert Kolker"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "HarperCollins",
+    "publish": "2020-02-04",
+    "total": 421,
+    "isbn-10": 63022419,
+    "isbn-13": 9780063022416,
+    "cover": "http://books.google.com/books/content?id=s1nMDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2025-01-17T03:32:31",
+    "Last-Updated": "2025-01-19T23:20:48",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Lost Girls.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "Lullaby",
+    "subtitle": "",
+    "author": [
+      "Chuck Palahniuk"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Anchor",
+    "publish": "2003-07-29",
+    "total": 274,
+    "isbn-10": 1400075572,
+    "isbn-13": 9781400075577,
+    "cover": "http://books.google.com/books/content?id=D0gCo8m7fl8C&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T12:19:14",
+    "Last-Updated": "2025-01-03T12:46:05",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Lullaby.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "1984",
+    "subtitle": "",
+    "author": [
+      "George Orwell"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "HarperCollins",
+    "publish": "2013-09-03",
+    "total": 309,
+    "isbn-10": 547249640,
+    "isbn-13": 9780547249643,
+    "cover": "http://books.google.com/books/content?id=cpAREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T11:49:38",
+    "Last-Updated": "2025-01-03T12:47:33",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Nineteen Eighty-four.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "People Who Eat Darkness",
+    "subtitle": "Love, Grief and a Journey Into Japan's Shadows",
+    "author": [
+      "Richard Lloyd Parry"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Random House",
+    "publish": "2010-12-28",
+    "total": 421,
+    "isbn-10": 99502550,
+    "isbn-13": 9780099502555,
+    "cover": "http://books.google.com/books/content?id=Cj_mhy46tJkC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-09T08:49:27",
+    "Last-Updated": "2025-01-03T10:02:20",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\People Who Eat Darkness.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "Rant",
+    "subtitle": "An Oral Biography of Buster Casey",
+    "author": [
+      "Chuck Palahniuk"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Anchor Canada",
+    "publish": "2009-02-24",
+    "total": 338,
+    "isbn-10": 307371964,
+    "isbn-13": 9780307371966,
+    "cover": "http://books.google.com/books/content?id=O1xIcDiultoC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-02T14:13:14",
+    "Last-Updated": "2025-01-03T12:46:28",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Rant.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Say Nothing",
+    "subtitle": "A True Story of Murder and Memory in Northern Ireland",
+    "author": [
+      "Patrick Radden Keefe"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Vintage",
+    "publish": "2020-02-25",
+    "total": 561,
+    "isbn-10": 307279286,
+    "isbn-13": 9780307279286,
+    "cover": "http://books.google.com/books/content?id=DlHUDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-12-30T12:31:48",
+    "Last-Updated": "2025-01-15T17:53:13",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Say Nothing.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Sins of the Seventh Sister",
+    "subtitle": "A Novel",
+    "author": [
+      "Huston Curtiss"
+    ],
+    "category": [
+      "Biography & Autobiography"
+    ],
+    "publisher": "Three Rivers Press",
+    "publish": "2004-05",
+    "total": 368,
+    "isbn-10": 1400052645,
+    "isbn-13": 9781400052646,
+    "cover": "http://books.google.com/books/content?id=cCQemQEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-12-30T11:46:57",
+    "Last-Updated": "2025-01-03T10:02:41",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Sins of the Seventh Sister.md"
+  },
+  {
+    "tags": [
+      "📚Book",
+      "Software-Engineering"
+    ],
+    "title": "Software Engineering",
+    "subtitle": "A Practitioner's Approach",
+    "author": [
+      "Roger S. Pressman",
+      "Bruce R. Maxim"
+    ],
+    "category": [
+      "Software-Engineering"
+    ],
+    "publisher": null,
+    "publish": "2019-09-09",
+    "total": 0,
+    "isbn-10": 1260548007,
+    "isbn-13": 9781260548006,
+    "cover": "http://books.google.com/books/content?id=taIKxAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2025-01-03T13:31:26",
+    "Last-Updated": "2025-02-02T10:48:14",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Software Engineering.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "Still Life with Woodpecker",
+    "subtitle": "A Novel",
+    "author": [
+      "Tom Robbins"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Bantam",
+    "publish": "2003-06-17",
+    "total": 277,
+    "isbn-10": 553897942,
+    "isbn-13": 9780553897944,
+    "cover": "https://books.google.com/books/content?id=O-Z1-eAQzPIC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T21:02:16",
+    "Last-Updated": "2025-01-03T10:02:52",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Still Life with Woodpecker.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "The Barn",
+    "subtitle": "The Secret History of a Murder in Mississippi",
+    "author": [
+      "Wright Thompson"
+    ],
+    "category": [
+      "History"
+    ],
+    "publisher": "Random House Large Print",
+    "publish": "2024-10-15",
+    "total": 609,
+    "isbn-10": 593949102,
+    "isbn-13": 9780593949108,
+    "cover": "http://books.google.com/books/content?id=vCD3EAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-12-31T00:23:32",
+    "Last-Updated": "2025-01-03T10:03:02",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Barn.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Butcher and the Wren",
+    "subtitle": "A Novel",
+    "author": [
+      "Alaina Urquhart"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Zando",
+    "publish": "2023-07-25",
+    "total": 256,
+    "isbn-10": 1638930961,
+    "isbn-13": 9781638930969,
+    "cover": "http://books.google.com/books/content?id=fqzWzwEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-11-30T12:23:05",
+    "Last-Updated": "2025-01-03T10:03:08",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Butcher and the Wren.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Devil In The White City",
+    "subtitle": "",
+    "author": [
+      "Erik Larson"
+    ],
+    "category": [
+      "History"
+    ],
+    "publisher": "Random House",
+    "publish": "2010-09-30",
+    "total": 498,
+    "isbn-10": 1409044602,
+    "isbn-13": 9781409044604,
+    "cover": "http://books.google.com/books/content?id=HOkTmxg8f_oC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T20:42:37",
+    "Last-Updated": "2025-01-03T10:03:15",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Devil In The White City.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Indifferent Stars Above",
+    "subtitle": "The Harrowing Saga of the Donner Party",
+    "author": [
+      "Daniel James Brown"
+    ],
+    "category": [
+      "Biography & Autobiography"
+    ],
+    "publisher": "Harper Collins",
+    "publish": "2009-04-28",
+    "total": 484,
+    "isbn-10": 61877255,
+    "isbn-13": 9780061877254,
+    "cover": "http://books.google.com/books/content?id=xK0rBiV0ZncC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Reading",
+    "Date-Created": "2025-01-18T05:33:27",
+    "Last-Updated": "2025-01-18T08:10:43",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Indifferent Stars Above.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Irish Assassins",
+    "subtitle": "Conspiracy, Revenge, and the Phoenix Park Murders That Stunned Victorian England",
+    "author": [
+      "Julie Kavanagh"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Grove Atlantic",
+    "publish": "2021-08-03",
+    "total": 328,
+    "isbn-10": 802149383,
+    "isbn-13": 9780802149381,
+    "cover": "http://books.google.com/books/content?id=h3MXEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2025-01-15T17:46:43",
+    "Last-Updated": "2025-02-04T05:33:59",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Irish Assassins.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Looming Tower",
+    "subtitle": "Al-Qaeda and the Road to 9/11",
+    "author": [
+      "Lawrence Wright"
+    ],
+    "category": [
+      "History"
+    ],
+    "publisher": "Vintage",
+    "publish": "2018-02-02",
+    "total": 594,
+    "isbn-10": 525564365,
+    "isbn-13": 9780525564362,
+    "cover": "http://books.google.com/books/content?id=KHMcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2025-01-19T03:16:47",
+    "Last-Updated": "2025-02-04T05:29:06",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Looming Tower.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "The Man from the Train",
+    "subtitle": "The Solving of a Century-Old Serial Killer Mystery",
+    "author": [
+      "Bill James",
+      "Rachel McCarthy James"
+    ],
+    "category": [
+      "History"
+    ],
+    "publisher": "Simon and Schuster",
+    "publish": "2017-09-19",
+    "total": 480,
+    "isbn-10": 1476796270,
+    "isbn-13": 9781476796277,
+    "cover": "http://books.google.com/books/content?id=chppDQAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T11:43:49",
+    "Last-Updated": "2025-01-03T12:47:07",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Man from the Train.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "The Monster of Florence",
+    "subtitle": "",
+    "author": [
+      "Douglas Preston"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Grand Central Publishing",
+    "publish": "2008-06-10",
+    "total": 404,
+    "isbn-10": 446537411,
+    "isbn-13": 9780446537414,
+    "cover": "http://books.google.com/books/content?id=2zUnXBLoN1gC&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T12:21:22",
+    "Last-Updated": "2025-01-03T10:03:26",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Monster of Florence.md"
+  },
+  {
+    "tag": "📚Book",
+    "title": "The Serial Killer's Apprentice",
+    "subtitle": "",
+    "author": [
+      "Katherine Ramsland",
+      "Tracy Ullman"
+    ],
+    "category": [
+      "True Crime"
+    ],
+    "publisher": "Penzler Publishers",
+    "publish": "2024-04-16",
+    "total": 211,
+    "isbn-10": 1613164963,
+    "isbn-13": 9781613164969,
+    "cover": "http://books.google.com/books/content?id=JRbREAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "Completed",
+    "Date-Created": "2024-11-30T12:21:42",
+    "Last-Updated": "2025-01-03T10:03:32",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\The Serial Killer's Apprentice.md"
+  },
+  {
+    "tags": [
+      "📚Book"
+    ],
+    "title": "Thirty-Seven",
+    "subtitle": "",
+    "author": [
+      "Peter Stenson"
+    ],
+    "category": [
+      "Fiction"
+    ],
+    "publisher": "Dzanc Books",
+    "publish": "2019-02-05",
+    "total": 288,
+    "isbn-10": 1945814861,
+    "isbn-13": 9781945814860,
+    "cover": "http://books.google.com/books/content?id=Y3l3twEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+    "status": "unread",
+    "Date-Created": "2024-12-30T12:29:19",
+    "Last-Updated": "2025-01-03T10:03:45",
+    "file": "C:\\Users\\trend\\PycharmProjects\\OB_Notes\\Logs\\Reading\\Thirty-Seven.md"
+  }
+]
