@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Books Metadata Sorted by Status</title>
+  <title>Joshua George - Reading List</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -56,7 +56,6 @@
 
   <!-- Inline JavaScript to fetch, sort, and display books -->
   <script>
-    // Fetch the JSON file containing your books' metadata
     fetch('python/metadata.json')
       .then(response => {
         if (!response.ok) {
@@ -65,14 +64,8 @@
         return response.json();
       })
       .then(data => {
-        // Define custom sort order for the status field
-        const statusOrder = {
-          unread: 0,
-          reading: 1,
-          completed: 2
-        };
+        const statusOrder = { unread: 0, reading: 1, completed: 2 };
 
-        // Sort the data array based on the status property
         data.sort((a, b) => {
           const statusA = a.status ? a.status.toLowerCase() : "";
           const statusB = b.status ? b.status.toLowerCase() : "";
@@ -81,15 +74,11 @@
           return orderA - orderB;
         });
 
-        // Get the container where book cards will be inserted
         const booksContainer = document.getElementById('books');
 
-        // For each book, create a new card and add it to the container
         data.forEach(book => {
           const card = document.createElement('div');
-          // Use your defined class (update as needed: 'static-card-3' or 'static-card')
           card.className = 'static-card-3';
-
           card.innerHTML = `
             ${book.cover ? `<img src="${book.cover}" alt="Cover of ${book.title}">` : ''}
             <h3>${book.title || 'Untitled'}</h3>
@@ -100,12 +89,21 @@
             <p><strong>ISBN-10:</strong> ${book['isbn-10'] || 'N/A'}</p>
             <p><strong>ISBN-13:</strong> ${book['isbn-13'] || 'N/A'}</p>
           `;
+
+          // Add click event listener for Google search
+          card.addEventListener('click', () => {
+            if (book.title) {
+              const searchQuery = encodeURIComponent(book.title + " book");
+              const googleSearchUrl = `https://www.google.com/search?q=${searchQuery}`;
+              window.open(googleSearchUrl, '_blank');
+            }
+          });
+
           booksContainer.appendChild(card);
         });
       })
       .catch(error => console.error('Error fetching books:', error));
   </script>
-
   <!-- External JavaScript file for menu toggle -->
   <script src="js/menu-toggle.js" defer></script>
   <script src="js/date.js" defer></script>
