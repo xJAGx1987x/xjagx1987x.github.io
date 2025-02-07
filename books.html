@@ -56,7 +56,7 @@
 
   <!-- Inline JavaScript to fetch, sort, and display books -->
   <script>
-fetch('python/metadata.json')
+fetch('data/metadata.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('Network response was not ok: ' + response.statusText);

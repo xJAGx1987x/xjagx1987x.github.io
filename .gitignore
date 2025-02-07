@@ -1,6 +1,7 @@
 /.idea
 /.venv
 
+/python
 # Default ignored files
 /shelf/
 /workspace.xml

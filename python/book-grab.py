@@ -84,7 +84,7 @@ def main(directory, output_file):
 if __name__ == '__main__':
     # Hard-code the directory you want to search and the output JSON file
     directory = "C:/Users/trend/PycharmProjects/OB_Notes/Logs/Reading"  # Update this path as needed
-    output_file = "metadata.json"  # Update the output file name/path if needed
+    output_file = "C:/Users/trend/PycharmProjects/xjagx1987x.github.io/data/metadata.json"  # Update the output file name/path if needed
 
     main(directory, output_file)
 
