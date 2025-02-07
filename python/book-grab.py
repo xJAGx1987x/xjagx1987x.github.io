@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 import datetime
 
-import yaml  # make sure you have installed PyYAML: pip install pyyaml
+import yaml
 
 
 def extract_yaml_metadata(md_file_path):

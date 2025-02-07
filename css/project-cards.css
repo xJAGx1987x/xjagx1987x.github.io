@@ -41,7 +41,7 @@
 
 .project-list .static-card-3 {
     flex: 1 1 100%; /* Full width of the container */
-    max-width: calc(25% - 10px); /* Prevent from exceeding container width */
+    max-width: calc(50% - 10px); /* Prevent from exceeding container width */
     min-width: 0; /* Remove any minimum width constraint */
     background: var(--background-alt); /* Card background */
     color: var(--text-color); /* Text color */
@@ -103,8 +103,8 @@
     text-align: center; 
 }
 
-/* Center images within each card */
-.project-list .static-card img, .static-card-3 img {
+.project-list .static-card img,
+.static-card-3 img {
     display: block;
     margin: 0 auto 1rem; /* Center and add spacing */
     max-width: 100%;
