@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Joshua George - Reading List</title>
+  <title>Books Metadata Sorted by Status</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -18,29 +18,29 @@
     <p id="current-date"></p>
   </header>
 
+  <main class="main-content">
+
     <section id="menu-wrapper">
-        <button id="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰ Menu</button>
-        <nav id="mobile-nav" aria-hidden="true">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li>
-                    <a href="images/Joshua George.pdf"
-                        class="download-link"
-                        data-file="images/Joshua George.pdf"
-                        data-confirm="Do you want to download this resume?">
-                        Resume
-                    </a>
-                </li>
-                <li><a href="connect.html">Connect</a></li>
-                <li>NEW! <a href="books.html">Reading List</a></li>
-                <li>NEW <a href="music.html">Spotify Playlists</a></li>
-            </ul>
-        </nav>
+      <button id="menu-toggle" aria-expanded="false" aria-label="Toggle menu">☰ Menu</button>
+      <nav id="mobile-nav" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li>
+            <a href="images/Joshua George.pdf"
+               class="download-link"
+               data-file="images/Joshua George.pdf"
+               data-confirm="Do you want to download this resume?">
+              Resume
+            </a>
+          </li>
+          <li><a href="connect.html">Connect</a></li>
+          <li>NEW! <a href="books.html">Reading List</a></li>
+        </ul>
+      </nav>
     </section>
 
-  <main class="main-content">
     <!-- Container for the book cards -->
     <div class="project-list" id="books"></div>
   </main>
@@ -56,54 +56,56 @@
 
   <!-- Inline JavaScript to fetch, sort, and display books -->
   <script>
-fetch('data/metadata.json')
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok: ' + response.statusText);
-    }
-    return response.json();
-  })
-  .then(data => {
-    const statusOrder = { unread: 0, reading: 1, completed: 2 };
-
-    data.sort((a, b) => {
-      const statusA = a.status ? a.status.toLowerCase() : "";
-      const statusB = b.status ? b.status.toLowerCase() : "";
-      const orderA = statusOrder[statusA] !== undefined ? statusOrder[statusA] : 99;
-      const orderB = statusOrder[statusB] !== undefined ? statusOrder[statusB] : 99;
-      return orderA - orderB;
-    });
-
-    const booksContainer = document.getElementById('books');
-
-    data.forEach(book => {
-      const card = document.createElement('div');
-      card.className = 'static-card-3';
-      card.innerHTML = `
-        ${book.cover ? `<img src="${book.cover}" alt="Cover of ${book.title}">` : ''}
-        <h3>${book.title || 'Untitled'}</h3>
-        <p><strong>Status:</strong> ${book.status || 'N/A'}</p>
-        <p><strong>Author:</strong> ${book.author ? book.author.join(', ') : 'N/A'}</p>
-        <p><strong>Publisher:</strong> ${book.publisher || 'N/A'}</p>
-        <p><strong>Publish Date:</strong> ${book.publish || 'N/A'}</p>
-        <p><strong>ISBN-10:</strong> ${book['isbn-10'] || 'N/A'}</p>
-        <p><strong>ISBN-13:</strong> ${book['isbn-13'] || 'N/A'}</p>
-        <p><strong>Description:</strong> ${book.description ? book.description.substring(0, 200) + '...' : 'No description available'}</p>
-      `;
-
-      card.addEventListener('click', () => {
-        if (book.title) {
-          const searchQuery = encodeURIComponent(book.title + " book");
-          const googleSearchUrl = `https://www.google.com/search?q=${searchQuery}`;
-          window.open(googleSearchUrl, '_blank');
+    // Fetch the JSON file containing your books' metadata
+    fetch('python/metadata.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok: ' + response.statusText);
         }
-      });
+        return response.json();
+      })
+      .then(data => {
+        // Define custom sort order for the status field
+        const statusOrder = {
+          unread: 0,
+          reading: 1,
+          completed: 2
+        };
 
-      booksContainer.appendChild(card);
-    });
-  })
-  .catch(error => console.error('Error fetching books:', error));
+        // Sort the data array based on the status property
+        data.sort((a, b) => {
+          const statusA = a.status ? a.status.toLowerCase() : "";
+          const statusB = b.status ? b.status.toLowerCase() : "";
+          const orderA = statusOrder[statusA] !== undefined ? statusOrder[statusA] : 99;
+          const orderB = statusOrder[statusB] !== undefined ? statusOrder[statusB] : 99;
+          return orderA - orderB;
+        });
+
+        // Get the container where book cards will be inserted
+        const booksContainer = document.getElementById('books');
+
+        // For each book, create a new card and add it to the container
+        data.forEach(book => {
+          const card = document.createElement('div');
+          // Use your defined class (update as needed: 'static-card-3' or 'static-card')
+          card.className = 'static-card-3';
+
+          card.innerHTML = `
+            ${book.cover ? `<img src="${book.cover}" alt="Cover of ${book.title}">` : ''}
+            <h3>${book.title || 'Untitled'}</h3>
+            <p><strong>Status:</strong> ${book.status || 'N/A'}</p>
+            <p><strong>Author:</strong> ${book.author ? book.author.join(', ') : 'N/A'}</p>
+            <p><strong>Publisher:</strong> ${book.publisher || 'N/A'}</p>
+            <p><strong>Publish Date:</strong> ${book.publish || 'N/A'}</p>
+            <p><strong>ISBN-10:</strong> ${book['isbn-10'] || 'N/A'}</p>
+            <p><strong>ISBN-13:</strong> ${book['isbn-13'] || 'N/A'}</p>
+          `;
+          booksContainer.appendChild(card);
+        });
+      })
+      .catch(error => console.error('Error fetching books:', error));
   </script>
+
   <!-- External JavaScript file for menu toggle -->
   <script src="js/menu-toggle.js" defer></script>
   <script src="js/date.js" defer></script>
