@@ -88,9 +88,7 @@
         // For each book, create a new card and add it to the container
         data.forEach(book => {
           const card = document.createElement('div');
-          // Use your defined class (update as needed: 'static-card-3' or 'static-card')
           card.className = 'static-card-3';
-
           card.innerHTML = `
             ${book.cover ? `<img src="${book.cover}" alt="Cover of ${book.title}">` : ''}
             <h3>${book.title || 'Untitled'}</h3>
@@ -100,6 +98,7 @@
             <p><strong>Publish Date:</strong> ${book.publish || 'N/A'}</p>
             <p><strong>ISBN-10:</strong> ${book['isbn-10'] || 'N/A'}</p>
             <p><strong>ISBN-13:</strong> ${book['isbn-13'] || 'N/A'}</p>
+            <p><strong>Description:</strong> ${book.description ? book.description.substring(0, 600) + '...' : 'No description available'}</p>
           `;
           booksContainer.appendChild(card);
         });
