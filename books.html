@@ -99,6 +99,7 @@
             <p><strong>ISBN-10:</strong> ${book['isbn-10'] || 'N/A'}</p>
             <p><strong>ISBN-13:</strong> ${book['isbn-13'] || 'N/A'}</p>
             <p><strong>Description:</strong> ${book.description ? book.description.substring(0, 600) + '...' : 'No description available'}</p>
+            <p><a href="https://www.google.com/search?q=${encodeURIComponent(book.title || 'Untitled')}" target="_blank" rel="noopener noreferrer">Search on Google</a></p>
           `;
           booksContainer.appendChild(card);
         });
